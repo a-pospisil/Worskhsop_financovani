@@ -2,7 +2,7 @@
 
 **Termín:** 23. 9. 2026, 18:00–20:30 · **Místo:** Baťův palác, Václavské náměstí 774/6, Praha 1 · **Kapacita:** 30 míst
 **Lektor:** Adam Pospíšil, Evergreen Finance (egfin.cz), adamovyfinance.cz
-**Rozsah:** 16 slidů, 16:9, česky · **Verze zadání:** 22. 9. 2026
+**Rozsah:** 16 slidů, 16:9, česky · **Verze zadání:** 22. 9. 2026, v2 (doplněno srovnání bank, čísla z Raynetu, fotky, příklad refinancování)
 
 ## Jak se zadáním pracovat
 
@@ -10,10 +10,11 @@
 - Texty a čísla ze sekce „Obsah slidu“ přebírat doslova. Poznámky pro lektora na slide nepatří (jen do speaker notes).
 - Formát čísel: tisíce s mezerou (26 841 Kč), miliony „mil. Kč“, procenta s mezerou (70 %), desetinná čárka.
 - Placeholdery v hranatých závorkách nechat viditelné jako rámeček s popiskem – doplní se ručně.
+- Podklady v této složce: `podklady/fotky/adam-hero.jpg`, `adam-portrait.jpg`, `adam-suit.jpg`, `og.jpg`, `logo.png` (z adamovyfinance.cz) a `podklady/srovnani-bank-osvc-2mil.webp` (výstup kalkulátoru bonity pro slide 6).
 
 ### Prompt pro Claude Design (zkopírovat)
 
-> Vytvoř prezentaci o 16 slidech (16:9, česky) přesně podle přiloženého zadání. Zachovej pořadí slidů, titulky a texty doslova, čísla neměň a nic nedoplňuj. Styl: tmavé pozadí #0D1B2A (titulní a závěrečný slide #070F1A), karty #112030 s ohraničením rgba(255,255,255,0.12) a zaoblením 16 px, zlatý akcent #C8962C na štítky bloků a nadpisy karet, tyrkysová #00C4D4 na klíčová čísla, hlavní text #E8EDF2, tlumený text #7A9BBD, varování #E74C3C. Písmo Calibri. Každý slide má vlevo nahoře malý štítek bloku (např. „BLOK 2 · BONITA“), titulek 36–40 pt a obsah v kartách, tabulkách nebo velkých číslech; žádný odstavec delší než dvě věty, minimální velikost textu 12 pt. Placeholdery v hranatých závorkách vykresli jako čárkované rámečky s popiskem. Poznámky pro lektora vlož do speaker notes.
+> Vytvoř prezentaci o 16 slidech (16:9, česky) přesně podle přiloženého zadání. Zachovej pořadí slidů, titulky a texty doslova, čísla neměň a nic nedoplňuj. Styl: tmavé pozadí #0D1B2A (titulní a závěrečný slide #070F1A), karty #112030 s ohraničením rgba(255,255,255,0.12) a zaoblením 16 px, zlatý akcent #C8962C na štítky bloků a nadpisy karet, tyrkysová #00C4D4 na klíčová čísla, hlavní text #E8EDF2, tlumený text #7A9BBD, varování #E74C3C. Písmo Calibri. Každý slide má vlevo nahoře malý štítek bloku (např. „BLOK 2 · BONITA“), titulek 36–40 pt a obsah v kartách, tabulkách nebo velkých číslech; žádný odstavec delší než dvě věty, minimální velikost textu 12 pt. Placeholdery v hranatých závorkách vykresli jako čárkované rámečky s popiskem. Poznámky pro lektora vlož do speaker notes. Na lektorském slidu (a volitelně na titulním) použij fotky lektora z přiložených souborů adam-portrait.jpg, adam-suit.jpg nebo adam-hero.jpg. Srovnání bank na slidu 6 vykresli jako tabulku přesně podle zadání, loga bank nahraď názvy.
 
 ## 1. Parametry akce a publikum
 
@@ -74,17 +75,21 @@ Blok 2 je nejrozsáhlejší téma, bloky 5A/5B jsou vyvrcholení – při skluzu
   - Podtitul: Od základních pojmů přes bonitu a zajištění k roadmapě první nemovitosti
   - Řádek témat: Pojmy · Bonita · Účel · Zajištění · Roadmapa
   - Patička: 23. 9. 2026 · Baťův palác, Praha 1 · Adam Pospíšil · egfin.cz
+  - Fotka (volitelně): `podklady/fotky/adam-hero.jpg` jako výřez v pravé části s jemným tmavým přechodem do pozadí
 - **Lektor říká:** kdo je v sále (rychlá otázka: kdo už má nemovitost, kdo byl odmítnut bankou).
 
 ### Slide 2 – Lektor a program večera
 
 - **Účel:** představení lektora (1 slide dle zadání) a orientace v čase.
-- **Rozvržení:** vlevo karta lektora se třemi číselnými dlaždicemi, vpravo program 01–06 s časy.
+- **Rozvržení:** vlevo fotka lektora na výšku, vedle ní karta se jménem, textem a třemi číselnými dlaždicemi, vpravo program 01–06 s časy.
 - **Obsah slidu:**
+  - Fotka: `podklady/fotky/adam-portrait.jpg` (alternativně `adam-suit.jpg`), výřez na výšku, zdroj adamovyfinance.cz
   - Nadpis: Adam Pospíšil
-  - Text: Finanční poradce a hypoteční specialista, majitel Evergreen Finance. Ve financích přes 15 let, od roku 2021 výhradně investiční nemovitosti. Sám buduje portfolio nájemních nemovitostí.
-  - Dlaždice: **15+** let ve financích · **620 mil. Kč** zprostředkovaných úvěrů v roce 2025 · **5,0** hodnocení Google (31 recenzí)
+  - Podtitul: Investor, hypoteční specialista a lektor · „Banka vidí úvěr. Já vidím portfolio.“
+  - Text: Majitel Evergreen Finance (od roku 2018). Ve financích přes 15 let, od roku 2021 výhradně investiční nemovitosti. Sám buduje portfolio nájemních nemovitostí.
+  - Dlaždice (Raynet CRM k 22. 9. 2026): **87** uzavřených obchodů v roce 2026 · **633 mil. Kč** objem uzavřených obchodů v roce 2026 · **513** klientů v CRM
   - Odkazy: egfin.cz · adamovyfinance.cz
+- **Zdroj čísel (Raynet, vlastník Adam Pospíšil):** 87 vyhraných obchodů uzavřených 1. 1.–22. 9. 2026 v objemu 632 962 708 Kč; 513 klientů celkem, z toho 198 ve stavu aktuální. Pro srovnání celá firma: 1 054 klientů (340 aktuálních). Web adamovyfinance.cz uvádí 15+ let, 3+ mld. Kč sjednaných úvěrů a 500+ klientů – lze použít místo dlaždic, pokud mají být čísla „za kariéru“.
   - Program:
 
 | # | Blok | Čas |
@@ -161,21 +166,29 @@ Blok 2 je nejrozsáhlejší téma, bloky 5A/5B jsou vyvrcholení – při skluzu
   - Karta „3. a další nemovitost“: **LTV 70 %** · **DTI 7×** ročního čistého příjmu
   - Řádek: ČSOB u předschváleného limitu počítá s DSTI 55 %.
 - **Lektor říká:** stejný klient dostane v každé bance jiné číslo – to je celý smysl bloku 2. Pořadí nástrojů v roadmapě je postavené tak, aby přísnější limity dopadly co nejpozději.
-- **K ověření:** nahrávka uvádí LTV 70 % a DTI 7× od 3. nemovitosti, starší deck až od 4. nemovitosti – potvrdit aktuální praxi ČSOB.
 
 ### Slide 6 – Bonita v praxi: kalkulátor a srovnání bank (BLOK 2)
 
-- **Účel:** ukázat rozdíl mezi bankami na živých číslech.
-- **Rozvržení:** vlevo tři kroky živé ukázky, vpravo tři rámečky pro screenshoty vedle sebe.
+- **Účel:** ukázat na reálném výpočtu, že stejný klient dostane v každé bance jiný maximální úvěr.
+- **Rozvržení:** nahoře řádek s parametry klienta, pod ním tabulka šesti bank (přepis obrázku `podklady/srovnani-bank-osvc-2mil.webp`), vpravo nebo pod tabulkou zvýrazněné rozpětí.
 - **Obsah slidu:**
-  - Nadpis vlevo: Živá ukázka: kalkulátor bonity app.exin.cz
-  - Krok 1: Stejný klient – OSVČ (obrat, základ daně, závazky, věk, děti)
-  - Krok 2: Přepnutí mezi bankami – stejná čísla, jiná metodika
-  - Krok 3: Maximální úvěr a splátka se liší o miliony
-  - Placeholdery: [Banka 1 – screenshot metodiky výpočtu příjmu OSVČ] · [Banka 2 – screenshot] · [Banka 3 – screenshot]
-  - Řádek dole: Stejný klient, tři banky, tři výsledky.
-- **Lektor říká:** kalkulátor pustit naživo (5 min), screenshoty slouží jako záloha, kdyby nešel internet.
-- **Doplnit:** tři screenshoty z app.exin.cz; výběr bank určí Adam.
+  - Štítek: ŽIVÁ UKÁZKA · kalkulátor bonity app.exin.cz
+  - Řádek parametrů: Klient OSVČ · obor: poradenství v oblasti řízení podniků · příjmy podle § 7 (řádek 101 daňového přiznání): 2 000 000 Kč · splatnost 30 let · fixace 3 roky · požadovaný úvěr 10 000 000 Kč
+  - Tabulka:
+
+| Banka | Schválitelný úvěr / splátka | Sazba | LTV | Náklady na zpracování | Max. výše úvěru / splátka |
+| --- | --- | --- | --- | --- | --- |
+| mBank | 10 000 000 Kč / 57 345 Kč | 5,59 % | 80 % | 5 000 Kč | 13 224 000 Kč / 75 833 Kč |
+| Česká spořitelna | 10 000 000 Kč / 55 757 Kč | 5,29 % | 80 % | 0 Kč | 10 759 132 Kč / 59 990 Kč |
+| Raiffeisenbank | 9 706 000 Kč / 53 537 Kč | 5,24 % | 78 % | 1 900 Kč | 9 706 000 Kč / 53 537 Kč |
+| UniCredit Bank | 8 955 000 Kč / 48 566 Kč | 5,29 % | 72 % | 7 600 Kč | 8 955 000 Kč / 48 566 Kč |
+| ČSOB Hypoteční banka | 8 648 000 Kč / 50 412 Kč | 5,74 % | 69 % | 2 200 Kč | 8 648 000 Kč / 50 412 Kč |
+| Komerční banka | 6 830 000 Kč / 39 167 Kč | 5,59 % | 55 % | 0 Kč | 6 830 000 Kč / 39 167 Kč |
+
+  - Zvýraznění: **6,83–13,22 mil. Kč** maximální úvěr pro stejného klienta · rozdíl **6,4 mil. Kč** mezi Komerční bankou a mBank
+  - Řádek pod tabulkou: Splatnost 30 let a fixace 3 roky u všech bank. LTV = podíl úvěru na hodnotě modelové nemovitosti (10 mil. Kč při 80 % odpovídá hodnotě 12,5 mil. Kč). Sazby orientační k datu výpočtu.
+- **Lektor říká:** kalkulátor pustit naživo (cca 5 minut) a nechat účastníky tipovat, kolik která banka půjčí; tabulka je výstup, který si mohou opsat. Hvězdička v kalkulátoru označuje mBank a Českou spořitelnu.
+- **Poznámka:** loga bank nahradit názvy; zdrojový obrázek je ve složce podklady.
 
 ### Slide 7 – Pronájem, s.r.o. a OSVČ (BLOK 2)
 
@@ -183,7 +196,7 @@ Blok 2 je nejrozsáhlejší téma, bloky 5A/5B jsou vyvrcholení – při skluzu
 - **Rozvržení:** tři karty vedle sebe.
 - **Obsah slidu:**
   - Karta „Příjem z pronájmu“: 70 % z běžícího nájmu podle nájemní smlouvy · nebo příjem podle daňového přiznání · Nájem po pokojích od více nájemníků většina bank neuzná (viz slide 14)
-  - Karta „Zisk z s.r.o. bez vyplácení společníkovi“: Vzorec: ř. 53 (zisk po zdanění) + ř. 15 výkazu zisku a ztráty · nebo ř. 53 × 0,85 ÷ 12 jako měsíční příjem · Při meziročním rozdílu nad 20 % bere banka průměr za poslední 2 roky
+  - Karta „Zisk z s.r.o. bez vyplácení společníkovi“: Vzorec: ř. 53 výkazu zisku a ztráty (zisk po zdanění) × 0,85 ÷ 12 = měsíční příjem · Při meziročním rozdílu nad 20 % bere banka průměr za poslední 2 roky · Min. 2 roky historie firmy
   - Karta „OSVČ: alternativní dokládání u ČSOB“: Vybrané profese, nebo max. 2 odběratelé (právnické osoby), kteří tvoří 80 % obratu · Dosah až cca 23 mil. Kč, ideálně 35 mil. Kč úvěrů
 - **Lektor říká:** u s.r.o. nemusíte zisk vyplácet, banka umí počítat s výsledkem firmy; u OSVČ s jedním či dvěma velkými odběrateli se otevírá cesta k desítkám milionů.
 
@@ -291,6 +304,15 @@ Blok 2 je nejrozsáhlejší téma, bloky 5A/5B jsou vyvrcholení – při skluzu
 | Volná zástavní hodnota do 80 % LTV | 37,9 × 0,10 | 3,8 mil. Kč (do 90 % LTV: 7,6 mil. Kč) |
 
   - Řádek: Model: všechny zajištěné úvěry při LTV 70 %, nezajištěné úvěry jako vlastní zdroje, DTI 7×. Nemovitosti koupené bez zástavy z kroků 2–5 přidávají volnou zástavní hodnotu v celé své ceně.
+  - Karta „Co s volnou zástavní hodnotou“ (příklad):
+
+| Krok | Výpočet | Výsledek |
+| --- | --- | --- |
+| Refinancování zajištěných úvěrů na LTV 80 % | 37,9 × 0,80 | nový úvěr 30,3 mil. Kč: 26,5 mil. Kč účelově na splacení stávajících úvěrů + 3,8 mil. Kč (10 % hodnoty) neúčelově jako hotovost |
+| Úvěr ze stavebního spoření | nezajištěný podle bonity (např. 2,5 mil. Kč), nebo zajištěný nad 80 % LTV do 90 % (37,9 × 0,10) | 2,5–3,8 mil. Kč |
+| Nové zdroje celkem | 3,8 + 2,5 až 3,8 | 6,3–7,6 mil. Kč = vlastní zdroje na další nákup za 21–25 mil. Kč při LTV 70 % |
+
+  - Řádek pod kartou: Předpoklad: bonita na vyšší splátku po refinancování (uznané nájmy) a ochota banky refinancovat celé portfolio.
 - **Lektor říká:** volná zástavní hodnota je most k pokročilým nástrojům (slide 15).
 
 ### Slide 14 – Alternativní roadmapa: LTV 90 % (BLOK 5B · ALTERNATIVA)
@@ -340,13 +362,12 @@ Blok 2 je nejrozsáhlejší téma, bloky 5A/5B jsou vyvrcholení – při skluzu
 
 ## 5. Otevřené body k ověření před finalizací
 
-1. LTV 70 % a DTI 7× od 3. nemovitosti (nahrávka) vs. od 4. nemovitosti (starší deck) – slidy 5, 10, 12.
-2. Vzorec pro s.r.o. „ř. 53 + ř. 15“ je převzatý doslovně z nahrávky; ř. 15 na slidu bez popisu – doplnit, pokud má být vysvětlen.
-3. Tabulka SBL drží prezentaci Monety tam, kde se liší od poznámek (prodejní síť, LTV komerce); poznámky jsou označené jako interní.
-4. „Cca 30 mil. Kč“ z nahrávky vs. prostý součet rámců 34,5–37,5 mil. Kč – obě čísla jsou na slidu 13; rozhodnout, zda nechat obě.
-5. Model finálního LTV je zjednodušený (všechny zajištěné úvěry při 70 %, nezajištěné jako vlastní zdroje) – předpoklady jsou na slidu 13.
-6. Ilustrativní příklad splátky počítá se sazbou 5 %; případně nahradit aktuální sazbou.
-7. Screenshoty bank pro slide 6 a výběr bank.
+1. „Cca 30 mil. Kč“ z nahrávky vs. prostý součet rámců 34,5–37,5 mil. Kč – obě čísla jsou na slidu 13; rozhodnout, zda nechat obě.
+2. Model finálního LTV je zjednodušený (všechny zajištěné úvěry při 70 %, nezajištěné jako vlastní zdroje) – předpoklady jsou na slidu 13; příklad refinancování na 80 % počítá s bonitou na vyšší splátku.
+3. Ilustrativní příklad splátky počítá se sazbou 5 %; případně nahradit aktuální sazbou.
+4. Čísla lektora: na slidu 2 jsou data z Raynetu za rok 2026 (87 obchodů, 633 mil. Kč, 513 klientů). Web egfin.cz uvádí 620 mil. Kč za rok 2025, Raynet za rok 2025 eviduje 452 mil. Kč – sjednotit, pokud má zaznít i rok 2025.
+5. Počet klientů: 513 (vlastník Adam Pospíšil) vs. 198 aktuálních vs. 1 054 za celou firmu – na slidu je 513.
+6. Sazby ve srovnání bank (slide 6) platí k datu výpočtu v kalkulátoru.
 
 ## 6. Zdroje
 
@@ -356,4 +377,7 @@ Blok 2 je nejrozsáhlejší téma, bloky 5A/5B jsou vyvrcholení – při skluzu
 - Workshop_Pokrocili_v3.pptx (4. 6. 2026) – styl, typy příjmů, křížová zástava
 - Nemovitostní obchody SME pro partnery (Moneta, 14. 9. 2026) a MMB.pdf (Změny SBL/EBZ 8/2026) – parametry SBL
 - egfin.cz/workshopy/zacatecnici – program, cílová skupina, lektor, ceny
+- Kalkulátor bonity – srovnání šesti bank pro OSVČ s příjmy 2 mil. Kč (`podklady/srovnani-bank-osvc-2mil.webp`)
+- Raynet CRM (instance evergreen), data k 22. 9. 2026 – počet klientů a uzavřené obchody 2026
+- adamovyfinance.cz – fotky lektora (`podklady/fotky`), tagline a čísla o lektorovi
 - Obsah workshopu (Claude Docs): https://claude.ai/artifact/QzHSF6PNuRp6Knn6RQik5i
