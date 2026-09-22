@@ -2,7 +2,7 @@
 
 **Termín:** 23. 9. 2026, 18:00–20:30 · **Místo:** Baťův palác, Václavské náměstí 774/6, Praha 1 · **Kapacita:** 30 míst
 **Lektor:** Adam Pospíšil, Evergreen Finance (egfin.cz), adamovyfinance.cz
-**Rozsah:** 16 slidů, 16:9, česky · **Verze zadání:** 22. 9. 2026, v2 (doplněno srovnání bank, čísla z Raynetu, fotky, příklad refinancování)
+**Rozsah:** 16 slidů, 16:9, česky · **Verze zadání:** 22. 9. 2026, v3 (vizuální styl podle webu egfin.cz; v2 doplnila srovnání bank, čísla z Raynetu, fotky a příklad refinancování)
 
 ## Jak se zadáním pracovat
 
@@ -10,11 +10,11 @@
 - Texty a čísla ze sekce „Obsah slidu“ přebírat doslova. Poznámky pro lektora na slide nepatří (jen do speaker notes).
 - Formát čísel: tisíce s mezerou (26 841 Kč), miliony „mil. Kč“, procenta s mezerou (70 %), desetinná čárka.
 - Placeholdery v hranatých závorkách nechat viditelné jako rámeček s popiskem – doplní se ručně.
-- Podklady v této složce: `podklady/fotky/adam-hero.jpg`, `adam-portrait.jpg`, `adam-suit.jpg`, `og.jpg`, `logo.png` (z adamovyfinance.cz) a `podklady/srovnani-bank-osvc-2mil.webp` (výstup kalkulátoru bonity pro slide 6).
+- Podklady v této složce: `podklady/fotky/egfin-adam-pospisil-original.jpg`, `egfin-adam-pospisil-kontakt.jpg`, `egfin-home.jpg` (hero), `egfin-icon.svg` (logo mark) a `egfin-og.png` z egfin.cz; `adam-hero.jpg`, `adam-portrait.jpg`, `adam-suit.jpg`, `og.jpg`, `logo.png` z adamovyfinance.cz; `podklady/srovnani-bank-osvc-2mil.webp` (výstup kalkulátoru bonity pro slide 6).
 
 ### Prompt pro Claude Design (zkopírovat)
 
-> Vytvoř prezentaci o 16 slidech (16:9, česky) přesně podle přiloženého zadání. Zachovej pořadí slidů, titulky a texty doslova, čísla neměň a nic nedoplňuj. Styl: tmavé pozadí #0D1B2A (titulní a závěrečný slide #070F1A), karty #112030 s ohraničením rgba(255,255,255,0.12) a zaoblením 16 px, zlatý akcent #C8962C na štítky bloků a nadpisy karet, tyrkysová #00C4D4 na klíčová čísla, hlavní text #E8EDF2, tlumený text #7A9BBD, varování #E74C3C. Písmo Calibri. Každý slide má vlevo nahoře malý štítek bloku (např. „BLOK 2 · BONITA“), titulek 36–40 pt a obsah v kartách, tabulkách nebo velkých číslech; žádný odstavec delší než dvě věty, minimální velikost textu 12 pt. Placeholdery v hranatých závorkách vykresli jako čárkované rámečky s popiskem. Poznámky pro lektora vlož do speaker notes. Na lektorském slidu (a volitelně na titulním) použij fotky lektora z přiložených souborů adam-portrait.jpg, adam-suit.jpg nebo adam-hero.jpg. Srovnání bank na slidu 6 vykresli jako tabulku přesně podle zadání, loga bank nahraď názvy.
+> Vytvoř prezentaci pro živý workshop: 16 slidů, 16:9, česky, přesně podle přiloženého souboru zadani-prezentace-2026-09-23.md. Sekce „4. Slidy“ definuje každý slide: titulek, rozvržení, přesný obsah a poznámky pro lektora. Texty a čísla přebírej doslova, nic nepřidávej, nevymýšlej a nezaokrouhluj. Poznámky pro lektora patří jen do speaker notes. Vizuální styl převezmi z webu egfin.cz (sekce „2. Vizuální styl“): tmavě zelené titulní, předělové a závěrečné slidy (#06231C, bílý text, akcent světlá zlatá #D9BE7F), světlé obsahové slidy (#FAFAF7 střídavě #F0F2ED) s bílými kartami (ohraničení #E3E7E0, zaoblení 8–12 px, jemný stín), nadpisy tmavě zelené #06231C, tlumený text #68746F, zlatá #C9A962 na štítky bloků, čísla kroků a jediné tlačítko, zelená #238A6C jen jako sekundární zvýraznění. Písma: Playfair Display Bold na titulky, Poppins na text, JetBrains Mono na čísla a tabulky. Jeden zlatý akcentní slide (slide 13, výsledek roadmapy). Každý slide má vlevo nahoře malý štítek bloku (např. „BLOK 2 · BONITA“), titulek 36–40 pt a obsah v kartách, tabulkách nebo velkých číslech; žádný odstavec delší než dvě věty, minimální velikost textu 12 pt. Žádné ozdobné pruhy, emoji ani přechody mimo fotku na titulním slidu. Logo mark egfin-icon.svg do patičky každého slidu. Fotky: egfin-adam-pospisil-original.jpg nebo adam-portrait.jpg na slide 2 (portrét v kartě), egfin-home.jpg nebo adam-hero.jpg na titulní slide s tmavě zeleným přechodem. Srovnání bank na slidu 6 postav jako tabulku podle zadání, loga bank nahraď názvy; obrázek srovnani-bank-osvc-2mil.webp je jen kontrola. Přiložený Workshop_Pokrocili_v3.pptx je jen reference struktury (agenda, shrnutí), ne barev. Nejdřív mi ukaž jen slide 1 a slide 10 (roadmapa). Po mém odsouhlasení stylu vygeneruj zbývajících 14 slidů ve stejném systému.
 
 ## 1. Parametry akce a publikum
 
@@ -26,18 +26,24 @@
 | Nevhodné pro | hledající konkrétní tipy na nemovitosti, rychlé zbohatnutí, bez úmyslu znalosti použít |
 | Cena (pro kontext) | early bird 2 649 Kč, standard 3 800 Kč; Balíček 2 (oba workshopy + nástroje) 5 990 Kč; Balíček 3 (oba workshopy + 1:1 konzultace) 15 649 Kč |
 
-## 2. Vizuální styl (podle staršího decku Workshop_Pokrocili_v3.pptx)
+## 2. Vizuální styl (podle webu egfin.cz)
 
 | Prvek | Zadání |
 | --- | --- |
-| Pozadí | #0D1B2A obsahové slidy, #070F1A titulní a závěrečný |
-| Karty | #112030 (sekundárně #1B3A5C), ohraničení rgba(255,255,255,0.12), zaoblení 16 px, vnitřní odsazení 24–32 px |
-| Akcenty | zlatá #C8962C (štítky, čísla bloků, nadpisy karet) · tyrkysová #00C4D4 (klíčová čísla) · zelená #27AE60 (pozitiva) · červená #E74C3C (varování) |
-| Text | #E8EDF2 hlavní, #B7C6D6 běžný text v kartách, #7A9BBD tlumený |
-| Písmo | Calibri: titulek 36–40 pt tučně, nadpis karty 18–20 pt tučně, text 12–14 pt, velká čísla 40–60 pt |
-| Motiv | číslované bloky 01–06, štítek bloku vlevo nahoře, velké číselné dlaždice, tabulky s tenkými linkami; žádné ozdobné pruhy, žádná emoji |
+| Princip | „sendvič“ jako na webu: tmavě zelené titulní, předělové a závěrečné slidy, světlé obsahové slidy s bílými kartami, jeden zlatý akcentní slide (slide 13, výsledek roadmapy) |
+| Tmavé pozadí | #06231C (evergreen-950), sekundárně #0A2E24 (evergreen-900); text bílý, tlumený text bílá 70 %, čísla a štítky světlá zlatá #D9BE7F |
+| Světlé pozadí | #FAFAF7 (paper) střídavě s #F0F2ED (mist); nadpisy #06231C, text #0A2E24, tlumený text #68746F, linky #E3E7E0 |
+| Karty na světlém | bílé #FFFFFF, ohraničení #E3E7E0 1 px, zaoblení 8–12 px, stín 0 1 2 px rgba(16,20,19,0.12); nadpis karty tmavě zelený; ikona v chipu 44 × 44 px se zlatým podkladem 15 % |
+| Karty na tmavém | bílá 10 % s ohraničením bílá 15 %, text bílý, čísla světle zlatá #D9BE7F |
+| Akcenty | zlatá #C9A962 (štítky bloků, čísla kroků, jediné tlačítko s tmavě zeleným textem), tmavší zlatá #A98B48 (stín, hover), zelená #238A6C (sekundární zvýraznění, kladné hodnoty), světlá mátová #B6DCCB jen v přechodech; stavové barvy: úspěch #1E8E5A, varování #E0951A, nebezpečí #C0392B |
+| Písma | titulky Playfair Display Bold s prostrkáním −3 %; text Poppins Regular / Medium / SemiBold; čísla, tabulky a výpočty JetBrains Mono s tabulkovými číslicemi |
+| Velikosti | titulek slidu 36–40 pt (Playfair), nadpis karty 18–20 pt (Poppins SemiBold), text 12–14 pt, velká čísla 40–60 pt (JetBrains Mono), štítek bloku 11–12 pt velkými písmeny s prostrkáním 2–3 px |
+| Motiv | zlatý štítek bloku vlevo nahoře, číslované bloky 01–06, logo mark v patičce (tmavě zelený zaoblený čtverec se třemi rostoucími zlatými sloupci, soubor `egfin-icon.svg`), patička „egfin.cz · Workshop pro začínající investory · 23. 9. 2026“ |
+| Fotky | titulní slide jako hero na webu: fotka s tmavě zeleným přechodem (#06231C 60–80 %) a bílým titulkem; portrét lektora v kartě se zaoblením 12 px |
+| Tón textů | krátké, sebevědomé věty jako na webu: „Banka vám řekne, kolik půjčí. My vám řekneme, jak růst.“ · „Získej od banky víc, než ti nabídnou na přepážce.“ |
 | Titulky | jednotný styl „téma slidu“ (ne pointa), max. 45 znaků |
 | Poslední slide | disclaimer 10–11 pt tlumeně |
+| Zakázáno | ozdobné pruhy, emoji, tmavě modrá a tyrkysová ze starého decku, přechody mimo titulní fotku, víc než dva akcenty na jednom slidu, text pod 12 pt |
 
 ## 3. Struktura a časování
 
@@ -68,22 +74,21 @@ Blok 2 je nejrozsáhlejší téma, bloky 5A/5B jsou vyvrcholení – při skluzu
 ### Slide 1 – Titulní
 
 - **Účel:** otevření, nastavení očekávání.
-- **Rozvržení:** tmavé pozadí #070F1A, velký titulek vlevo dole, dekorativní kruhy vpravo nahoře (jako starý deck), zlatý štítek nad titulkem.
+- **Rozvržení:** hero jako na webu egfin.cz: fotka `egfin-home.jpg` (nebo `adam-hero.jpg`) přes celý slide s tmavě zeleným přechodem #06231C, bílý titulek vlevo dole v Playfair Display, zlatý štítek nad titulkem, logo mark vpravo nahoře.
 - **Obsah slidu:**
   - Štítek: WORKSHOP PRO ZAČÍNAJÍCÍ INVESTORY · 2026
   - Titulek: Financování investičních nemovitostí
-  - Podtitul: Od základních pojmů přes bonitu a zajištění k roadmapě první nemovitosti
+  - Podtitul: Získej od banky víc, než ti nabídnou na přepážce (převzato z webu; alternativa: Od základních pojmů přes bonitu a zajištění k roadmapě první nemovitosti)
   - Řádek témat: Pojmy · Bonita · Účel · Zajištění · Roadmapa
   - Patička: 23. 9. 2026 · Baťův palác, Praha 1 · Adam Pospíšil · egfin.cz
-  - Fotka (volitelně): `podklady/fotky/adam-hero.jpg` jako výřez v pravé části s jemným tmavým přechodem do pozadí
 - **Lektor říká:** kdo je v sále (rychlá otázka: kdo už má nemovitost, kdo byl odmítnut bankou).
 
 ### Slide 2 – Lektor a program večera
 
 - **Účel:** představení lektora (1 slide dle zadání) a orientace v čase.
-- **Rozvržení:** vlevo fotka lektora na výšku, vedle ní karta se jménem, textem a třemi číselnými dlaždicemi, vpravo program 01–06 s časy.
+- **Rozvržení:** světlé pozadí; vlevo fotka lektora na výšku v bílé kartě, vedle ní jméno, podtitul, text a tři číselné dlaždice (JetBrains Mono, zlatá čísla), vpravo program 01–06 s časy.
 - **Obsah slidu:**
-  - Fotka: `podklady/fotky/adam-portrait.jpg` (alternativně `adam-suit.jpg`), výřez na výšku, zdroj adamovyfinance.cz
+  - Fotka: `podklady/fotky/egfin-adam-pospisil-original.jpg` (z egfin.cz; alternativy `adam-portrait.jpg`, `adam-suit.jpg` z adamovyfinance.cz), výřez na výšku v kartě se zaoblením 12 px
   - Nadpis: Adam Pospíšil
   - Podtitul: Investor, hypoteční specialista a lektor · „Banka vidí úvěr. Já vidím portfolio.“
   - Text: Majitel Evergreen Finance (od roku 2018). Ve financích přes 15 let, od roku 2021 výhradně investiční nemovitosti. Sám buduje portfolio nájemních nemovitostí.
@@ -239,7 +244,7 @@ Blok 2 je nejrozsáhlejší téma, bloky 5A/5B jsou vyvrcholení – při skluzu
 ### Slide 10 – Roadmapa v sedmi krocích (BLOK 5A · ROADMAPA)
 
 - **Účel:** vyvrcholení večera – celý postup na jednom místě.
-- **Rozvržení:** vodorovná časová osa nebo mřížka 4 × 2 karet: číslo kroku, nástroj, částka (tyrkysově), jedna poznámka; osmá karta zlatá se součtem.
+- **Rozvržení:** vodorovná časová osa nebo mřížka 4 × 2 karet: číslo kroku, nástroj, částka (zlatě, JetBrains Mono), jedna poznámka; osmá karta tmavě zelená se zlatým součtem.
 - **Obsah slidu:**
 
 | Krok | Nástroj | Rámcová částka | Poznámka na kartě |
@@ -374,7 +379,8 @@ Blok 2 je nejrozsáhlejší téma, bloky 5A/5B jsou vyvrcholení – při skluzu
 - Pocket: nahrávka „Příprava workshopu pro začínající investory“ (22. 9. 2026, 07:56) – struktura a roadmapa 5A
 - Pocket: nahrávka „Investiční strategie pro začínající investory“ (22. 9. 2026, 08:17) – alternativní roadmapa 5B
 - Poznámky Adama z 22. 9. 2026 – předschválený limit ČSOB, evidovaný příjem ČSOBS, SBL
-- Workshop_Pokrocili_v3.pptx (4. 6. 2026) – styl, typy příjmů, křížová zástava
+- Workshop_Pokrocili_v3.pptx (4. 6. 2026) – struktura některých slidů, typy příjmů, křížová zástava (styl ne, ten je podle egfin.cz)
+- egfin.cz – vizuální styl (barvy, písma, logo mark, hero), fotky lektora (`podklady/fotky/egfin-*`)
 - Nemovitostní obchody SME pro partnery (Moneta, 14. 9. 2026) a MMB.pdf (Změny SBL/EBZ 8/2026) – parametry SBL
 - egfin.cz/workshopy/zacatecnici – program, cílová skupina, lektor, ceny
 - Kalkulátor bonity – srovnání šesti bank pro OSVČ s příjmy 2 mil. Kč (`podklady/srovnani-bank-osvc-2mil.webp`)
