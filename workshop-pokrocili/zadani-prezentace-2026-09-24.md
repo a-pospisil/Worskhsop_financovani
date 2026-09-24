@@ -1,7 +1,7 @@
 # Zadání prezentace – Workshop financování pro pokročilé investory
 
 **Termín:** 24. 9. 2026, 18:00–20:30 · **Místo:** Baťův palác, Václavské náměstí 774/6, Praha 1 · **Lektor:** Adam Pospíšil, Evergreen Finance (egfin.cz), adamovyfinance.cz
-**Rozsah:** 19 slidů (vč. 12a), 16:9, česky · **Verze zadání:** 24. 9. 2026, v4 (slide 16 přepracován: SPV dlužník, původní s.r.o. ručitel, tok nájem FO → SPV → podnájem; v3: Home Credit, slide 12a; v2: místo a čas, startup ČS) · **Navazuje na:** `../workshop-zacatecnici/zadani-prezentace-2026-09-23.md` (stejný vizuální systém)
+**Rozsah:** 20 slidů (vč. 12a, 12b), 16:9, česky · **Verze zadání:** 24. 9. 2026, v5 (Credix podle hovoru 24. 9.: slidy 6, 12, 17, nový slide 12b; v4: slide 16 SPV; v3: Home Credit, slide 12a; v2: místo a čas, startup ČS) · **Navazuje na:** `../workshop-zacatecnici/zadani-prezentace-2026-09-23.md` (stejný vizuální systém)
 
 ## Jak se zadáním pracovat
 
@@ -14,7 +14,7 @@
 
 ### Prompt pro Claude Design (zkopírovat)
 
-> Vytvoř prezentaci pro živý workshop pro pokročilé investory: 19 slidů (1–12, 12a, 13–18), 16:9, česky, přesně podle přiloženého souboru zadani-prezentace-2026-09-24.md. Sekce „3. Slidy“ definuje každý slide: titulek, rozvržení, přesný obsah a poznámky pro lektora. Texty a čísla přebírej doslova, nic nepřidávej, nevymýšlej a nezaokrouhluj. Poznámky pro lektora patří jen do speaker notes. Vizuální styl stejný jako u workshopu pro začátečníky podle webu egfin.cz: tmavě zelené titulní, předělové a závěrečné slidy (#06231C, bílý text, akcent světlá zlatá #D9BE7F), světlé obsahové slidy (#FAFAF7 střídavě #F0F2ED) s bílými kartami (ohraničení #E3E7E0, zaoblení 8–12 px, jemný stín), nadpisy #06231C, tlumený text #68746F, zlatá #C9A962 na štítky bloků a čísla kroků, zelená #238A6C jen jako sekundární zvýraznění. Písma: Playfair Display Bold na titulky, Poppins na text, JetBrains Mono na čísla a tabulky. Tabulky srovnání bank jsou hlavní obsah – řádky parametrů, sloupce banky, nejlepší hodnota v řádku zvýrazněná zelenou #238A6C, hranice/omezení varovnou #E0951A. Slidy 14 a 16 jsou diagramy: překresli je nativně podle přiložených obrázků kolecko-strategie.png a kolecko-spv.png (tmavě zelené pozadí, zlaté šipky), texty z nich převezmi doslova. Jeden zlatý akcentní slide (slide 15, kolečko v číslech). Každý slide má vlevo nahoře malý štítek bloku (např. „BLOK 2 · POSLOUPNOST BANK“), titulek 36–40 pt, obsah v kartách, tabulkách nebo velkých číslech; minimální velikost textu 12 pt. Žádné ozdobné pruhy, emoji ani přechody mimo fotku na titulním slidu. Logo mark egfin-icon.svg do patičky každého slidu. Nejdřív mi ukaž slide 6 (matice bank) a slide 14 (kolečko). Po odsouhlasení vygeneruj zbývající slidy ve stejném systému.
+> Vytvoř prezentaci pro živý workshop pro pokročilé investory: 20 slidů (1–12, 12a, 12b, 13–18), 16:9, česky, přesně podle přiloženého souboru zadani-prezentace-2026-09-24.md. Sekce „3. Slidy“ definuje každý slide: titulek, rozvržení, přesný obsah a poznámky pro lektora. Texty a čísla přebírej doslova, nic nepřidávej, nevymýšlej a nezaokrouhluj. Poznámky pro lektora patří jen do speaker notes. Vizuální styl stejný jako u workshopu pro začátečníky podle webu egfin.cz: tmavě zelené titulní, předělové a závěrečné slidy (#06231C, bílý text, akcent světlá zlatá #D9BE7F), světlé obsahové slidy (#FAFAF7 střídavě #F0F2ED) s bílými kartami (ohraničení #E3E7E0, zaoblení 8–12 px, jemný stín), nadpisy #06231C, tlumený text #68746F, zlatá #C9A962 na štítky bloků a čísla kroků, zelená #238A6C jen jako sekundární zvýraznění. Písma: Playfair Display Bold na titulky, Poppins na text, JetBrains Mono na čísla a tabulky. Tabulky srovnání bank jsou hlavní obsah – řádky parametrů, sloupce banky, nejlepší hodnota v řádku zvýrazněná zelenou #238A6C, hranice/omezení varovnou #E0951A. Slidy 14 a 16 jsou diagramy: překresli je nativně podle přiložených obrázků kolecko-strategie.png a kolecko-spv.png (tmavě zelené pozadí, zlaté šipky), texty z nich převezmi doslova. Jeden zlatý akcentní slide (slide 15, kolečko v číslech). Každý slide má vlevo nahoře malý štítek bloku (např. „BLOK 2 · POSLOUPNOST BANK“), titulek 36–40 pt, obsah v kartách, tabulkách nebo velkých číslech; minimální velikost textu 12 pt. Žádné ozdobné pruhy, emoji ani přechody mimo fotku na titulním slidu. Logo mark egfin-icon.svg do patičky každého slidu. Nejdřív mi ukaž slide 6 (matice bank) a slide 14 (kolečko). Po odsouhlasení vygeneruj zbývající slidy ve stejném systému.
 
 ### Doplňující prompt pro Claude Design – Home Credit (v3, zkopírovat do rozpracované prezentace)
 
@@ -23,6 +23,17 @@
 ### Doplňující prompt pro Claude Design – slide 16 (v4, zkopírovat do rozpracované prezentace)
 
 > Přepracuj slide 16 „Úskalí kolečka a varianta SPV“ podle nové verze zadání (v4, přikládám zadani-prezentace-2026-09-24.md) a podle přiloženého obrázku kolecko-spv.png. Ostatní slidy nech beze změny. Slide je tmavě zelený (#06231C). Vlevo na 2/3 šířky překresli nativně schéma šesti uzlů ve dvou řadách: nahoře Původní s.r.o. (RUČITEL / PŘISTUPITEL), SPV s.r.o. (DLUŽNÍK, zvýrazněný zlatým rámečkem) a Moneta; dole Nemovitost, FO (investor) a Koncový nájemník – texty uzlů převezmi doslova ze zadání. Šipky mezi uzly mají číslo kroku v kroužku a tři barvy: zlatá #D9BE7F = peníze, světlá mátová #B6DCCB = smluvní vztah (ručení, nájem, podnájem), zelená #238A6C = nemovitost; směr a číslování šipek přesně podle seznamu „šipky“ v zadání (R, 1–8), pod schématem legenda barev. Vpravo na 1/3 šířky karta „PROČ SPV, A NE PŮVODNÍ S.R.O.“ s varovným rámečkem #E0951A a textem ze zadání, tučně „V SPV zůstává úvěr i zápůjčka.“. Dole pás osmi kroků ve dvou řadách po čtyřech, každý se zlatým číslem, tučným názvem a jednořádkovým popisem podle tabulky kroků v zadání. Patička slidu podle zadání, poznámky pro lektora jen do speaker notes. Písma, štítek bloku a logo v patičce stejné jako na ostatních slidech. Ukaž mi výsledek.
+
+### Doplňující prompt pro Claude Design – Credix a úpravy po review (v5, zkopírovat do rozpracované prezentace)
+
+> Aktualizuj prezentaci podle zadání v5 (přikládám zadani-prezentace-2026-09-24.md). Ostatní slidy nech beze změny, pokud nejsou níže uvedené.
+> 1) Slide „Matice bank: co je kde možné“: sloupec Credix přepiš podle tabulky v zadání (sazba 9–10 %, LTV podle typu, bridge 12–36 měsíců, zástava jen vlastní / skupina / FO společníka, poplatek do 2 %, exit fee do 1 roku 2–3 %, schválení i čerpání ~10 pracovních dnů). Zároveň tabulku zjednoduš: na slidu nech jen řádky Dlužník, Sazba, Max. LTV, Výše úvěru, Splatnost, Zástava 3. osoby; řádky Bonita, Poplatky, Předčasné splacení a Rychlost přesuň do speaker notes. Oprav zarovnání řádku Bonita a zvětši písmo na min. 12 pt.
+> 2) Slide „Projektové financování: Fio, Credix, Home Credit“: přepiš sloupec Credix a přidej řádek „Zástava“ podle tabulky v zadání; kartu Credix změň na „bridge 12–36 měsíců na rychlý nákup, činžovní dům → prohlášení vlastníka → rozprodej nebo refinancování, provozní úvěr se zástavou nemovitosti (slide 12b)“. Oprav kolizi titulku s hlavičkou tabulky (titulek nahoře, tabulka začíná pod ním s mezerou) a blok „Kdy použít“ nesmí překrývat logo v patičce.
+> 3) Vlož nový slide 12b „Credix: bridge financování“ hned za slide „Home Credit: investiční a developerský úvěr“, štítek „BLOK 5 · STARTUP A PROJEKTOVÉ“, světlé pozadí, stejná struktura jako slide Home Credit: vlevo karta „Bridge 12–36 měsíců“ s velkými čísly 9–10 %, 12–36 měsíců, ~10 pracovních dnů v JetBrains Mono a tokem ve 3 číslovaných krocích se zlatými čísly (Credix zafinancuje nákup → nájmy 6–12 měsíců → refinancování do banky, nejčastěji Moneta); vpravo tabulka LTV podle typu nemovitosti; dole pruh „Zástava a vlastní zdroje“ se zvýrazněním „zástava třetí osoby ne“ varovnou #E0951A. Texty a čísla doslova ze sekce „Slide 12b“, poznámky pro lektora do speaker notes.
+> 4) Slide „Zástava, odhad a proces“: v kartě Zástava přidej „Credix: zástava třetí osoby ne – bez protiplnění ji může insolvenční správce zpochybnit“; v kartě Odhad nahraď text o Credixu textem „Credix: odhadci Banky CREDITAS, nad 25 mil. Kč supervize v bance (lze i vlastní bankovní znalec)“; v kartě Proces a čas nahraď „Credix rychlý prescoring“ textem „Credix schválení i čerpání ~10 pracovních dnů“.
+> 5) Slide „Shrnutí, diskuze a kontakty“, bod 02: „(ČS) → RB → Moneta → Credix / Home Credit / Fio; bridge Credix → refinancování do Monety.“
+> 6) Opravy napříč deckem: znak „↔“ se nevykresluje (titulní slide, slide Kolečko, shrnutí) – nahraď ho textem „FO a PO“ (titulek „Kolečko FO a PO“). Sjednoť sazby Monety na všech slidech na hodnoty ze slidu „Moneta SBL: Mini, Plus, Pro“ (Mini 7 %, Plus a Pro 6,5 %) – tedy i na slidech „Kde končí bonita FO“, „Matice bank“, „Moneta: co je nového“ (splátka 3 mil. Kč při 7 % / 30 let = 19 959 Kč) a „Shrnutí“ bod 03. Slide „PROFIT rezidenční / komerční“ přejmenuj na „Raiffeisenbank: hypotéka na pronájem a DSCR“. Na slidu „Kde končí bonita FO“ oprav „omezeně (čsobs ok)“ na „omezeně (ČSOBS ano)“. Na slidu „Rekapitulace: roadmapa“ odstraň závorky u „(Modrá pyramida)“ a „(Partners banka)“, nebo je vysvětli v poznámce. V matici bank sjednoť rychlost RB s RB slidem (schválení do 3 pracovních dnů).
+> Ukaž mi nejdřív slide 12b a upravenou matici bank.
 
 ## 1. Parametry akce a publikum
 
@@ -51,8 +62,9 @@
 | – | Přestávka | – | 19:05–19:20 | 15 |
 | 11 | Startup úvěry: ČS vs. ČSOB | 4 | 19:20 | 5 |
 | 12 | Projektové financování: Fio, Credix, Home Credit | 4 | 19:25 | 6 |
-| 12a | Home Credit: investiční a developerský úvěr | 4 | 19:31 | 4 |
-| 13 | Bonita právnické osoby | 5 · STRATEGIE | 19:35 | 7 |
+| 12a | Home Credit: investiční a developerský úvěr | 4 | 19:31 | 3 |
+| 12b | Credix: bridge financování | 4 | 19:34 | 3 |
+| 13 | Bonita právnické osoby | 5 · STRATEGIE | 19:37 | 5 |
 | 14 | Kolečko FO ↔ PO | 5 | 19:42 | 8 |
 | 15 | Kolečko v číslech | 5 | 19:50 | 5 |
 | 16 | Úskalí kolečka a varianta SPV | 5 | 19:55 | 8 |
@@ -150,16 +162,16 @@ Při skluzu zkrátit slidy 10 a 17, ne blok 5 (strategie je vyvrcholení).
 
 | Parametr | ČS | RB | Moneta SBL | Fio | Credix | Home Credit |
 | --- | --- | --- | --- | --- | --- | --- |
-| Dlužník | FOP, PO, SPV | FO, s.r.o. | OSVČ, s.r.o. | PO | jen PO | FOP, PO |
-| Sazba orient. | 9,9 % startup | od 5,29 % | 6,8–7,2 % | PRIBOR + 2,2 % | od 8,9 % | 8,5–10,5 % |
-| Max. LTV | 70/80 % výnos. hodnoty | 70 % (RE 65 %) | 65–80 % | 60–70 % | až 80 % | Praha, Brno 70–75 %, krajská města 65–70 %, komerce 60 % |
-| Výše úvěru | do 30 mil. Kč | 20 mil. rezid. / 12 mil. komerce | 1–80 mil. Kč | individuálně | 5–80 mil. Kč | 5–150 mil. Kč na projekt, 200 mil. Kč na skupinu |
-| Splatnost | 15–30 let dle typu | 30 let rezid. / 20 let komerce | 30 let (komerce 20) | ~25 let | 12–36 měsíců | max. 20 let, anuitně |
-| Bonita | EBITDA, 2 DP | budoucí nájmy, zisk s.r.o., DSCR | výkazy, DSCR | výkazy, záměr | záměr + exit | 90 % čistého nájmu (bez služeb a FO), ESSO přes ručitelskou společnost |
-| Zástava 3. osoby | individuálně | – | ano | + podíly, pohledávky | + směnka, NZ | ano (jednatel, SJM) |
-| Poplatky | 0 Kč startup | – | – | 0,5 % + 0,3 % ročně | 2 % | 2 %, max. 80 000 Kč + supervize 15 000 Kč |
-| Předčasné splacení | – | – | – | zdarma | zdarma | po 12 měs. zdarma (dřív 3 %) |
-| Rychlost | – | do 3 prac. dnů | – | ~3 měsíce | rychlý prescoring | ~1 měsíc |
+| Dlužník | FOP, PO, SPV | FO, s.r.o. | OSVČ, s.r.o. | PO | jen PO (nemovitost vlastní PO) | FOP, PO |
+| Sazba orient. | 9,9 % startup | od 5,29 % | 6,8–7,2 % | PRIBOR + 2,2 % | 9–10 % | 8,5–10,5 % |
+| Max. LTV | 70/80 % výnos. hodnoty | 70 % (RE 65 %) | 65–80 % | 60–70 % | byty a domy 65–80 %, bytové domy typicky 70–75 %, krajská města max. 70 % | Praha, Brno 70–75 %, krajská města 65–70 %, komerce 60 % |
+| Výše úvěru | do 30 mil. Kč | 20 mil. rezid. / 12 mil. komerce | 1–80 mil. Kč | individuálně | 5–80 mil. Kč (činžovní domy Praha, Brno až 100 mil. Kč na výjimku) | 5–150 mil. Kč na projekt, 200 mil. Kč na skupinu |
+| Splatnost | 15–30 let dle typu | 30 let rezid. / 20 let komerce | 30 let (komerce 20) | ~25 let | bridge 12–36 měsíců | max. 20 let, anuitně |
+| Bonita | EBITDA, 2 DP | budoucí nájmy, zisk s.r.o., DSCR | výkazy, DSCR | výkazy, záměr | záměr + exit (refinancování do banky nebo prodej) | 90 % čistého nájmu (bez služeb a FO), ESSO přes ručitelskou společnost |
+| Zástava 3. osoby | individuálně | – | ano | + podíly, pohledávky | jen vlastní, skupina nebo FO společníka – ne třetí osoba | ano (jednatel, SJM) |
+| Poplatky | 0 Kč startup | – | – | 0,5 % + 0,3 % ročně | do 2 % z rámce | 2 %, max. 80 000 Kč + supervize 15 000 Kč |
+| Předčasné splacení | – | – | – | zdarma | do 1 roku 2–3 %, pak zdarma | po 12 měs. zdarma (dřív 3 %) |
+| Rychlost | – | do 3 prac. dnů | – | ~3 měsíce | schválení i čerpání ~10 prac. dnů | ~1 měsíc |
 
   - Poznámka: Sazby orientační k 24. 9. 2026. Pomlčka = není předmětem srovnání / individuálně.
 - **Lektor říká:** tuhle tabulku si vyfoťte. Otázka není „která banka je nejlepší“, ale „která banka umí můj případ a v jakém pořadí“.
@@ -265,22 +277,23 @@ Při skluzu zkrátit slidy 10 a 17, ne blok 5 (strategie je vyvrcholení).
 | Parametr | Fio | Credix | Home Credit |
 | --- | --- | --- | --- |
 | Dlužník | PO, ručí FO | jen PO (nemovitost ve vlastnictví PO) | FOP i PO; nový projekt = SPV + vždy ručitelská společnost |
-| Sazba | PRIBOR + 2,2 % (~5,8–6,3 %) | od 8,9 % | 8,5–10,5 % (development 8,5–9,5 %) |
-| LTV | 60–70 % | až 80 % (Praha, Brno, byty do 80 m²) | Praha, Brno 70–75 % · krajská města 65–70 % · komerce 60 % · min. 20 % vlastních zdrojů |
-| Výše | individuálně | 5–80 mil. Kč (125 mil. Kč na ESS) | 5–150 mil. Kč na projekt, 200 mil. Kč na skupinu |
-| Splatnost | ~25 let | 12–36 měsíců | max. 20 let (i komerce a development) |
-| Splácení | anuitně | balon s kapitalizací úroků, nebo měsíčně úroky | vždy měsíčně anuitně, žádné balony |
-| Poplatky | 0,5 % přistavení, 0,3 % monitoring ročně | 2 % zpracování | 2 %, max. 80 000 Kč · supervize 15 000 Kč · katastr 1 600 Kč · notářský zápis |
-| Předčasné splacení | zdarma | zdarma | v prvních 12 měsících 3 %, pak zdarma |
-| Bonita | výkazy, záměr | záměr + exit strategie | celá splátka: 90 % nájmu očištěného o služby a fond oprav + příjmy ESSO přes ručitele |
-| Rychlost | ~3 měsíce | rychlý prescoring | ~1 měsíc (refi + hotovost 2–3 měsíce) |
+| Sazba | PRIBOR + 2,2 % (~5,8–6,3 %) | 9–10 % | 8,5–10,5 % (development 8,5–9,5 %) |
+| LTV | 60–70 % | byty a domy 65–80 % · bytové domy typicky 70–75 % (Praha, Brno výš) · krajská města max. 70 % · pozemek se SP 65–70 %, bez SP 50–55 % · min. 20 % vlastních zdrojů (v rámci skupiny i 100 %) | Praha, Brno 70–75 % · krajská města 65–70 % · komerce 60 % · min. 20 % vlastních zdrojů |
+| Výše | individuálně | 5–80 mil. Kč (125 mil. Kč na ESS; činžovní domy Praha, Brno až 100 mil. Kč na výjimku) | 5–150 mil. Kč na projekt, 200 mil. Kč na skupinu |
+| Splatnost | ~25 let | bridge 12–36 měsíců, pak refinancování do banky | max. 20 let (i komerce a development) |
+| Splácení | anuitně | měsíčně úroky (z nájmů) a jistina ve splatnosti, nebo balon s kapitalizací úroků | vždy měsíčně anuitně, žádné balony |
+| Poplatky | 0,5 % přistavení, 0,3 % monitoring ročně | do 2 % z úvěrového rámce | 2 %, max. 80 000 Kč · supervize 15 000 Kč · katastr 1 600 Kč · notářský zápis |
+| Předčasné splacení | zdarma | do 1 roku exit fee 2–3 %, pak zdarma (lze 0 % po 6 měsících za vyšší sazbu) | v prvních 12 měsících 3 %, pak zdarma |
+| Bonita | výkazy, záměr | záměr + exit strategie; dlouhodobý pronájem umí, ale klient odchází do banky o ~3 p. b. levněji | celá splátka: 90 % nájmu očištěného o služby a fond oprav + příjmy ESSO přes ručitele |
+| Zástava | financovaná nemovitost + podíly, pohledávky | jen vlastní nemovitost, nemovitost PO ze skupiny nebo FO společníka – ne třetí osoba (ani rodina) | i nemovitost jednatele / SJM |
+| Rychlost | ~3 měsíce | schválení i čerpání ~10 pracovních dnů, čerpání na návrh na vklad | ~1 měsíc (refi + hotovost 2–3 měsíce) |
 
 - **Obsah slidu – karty:**
   - Fio: plánovaný projekt s časovou rezervou – nejlevnější z trojice
-  - Credix: development, nemovitostní rámec (revolving na postupné nákupy), exit prodejem
+  - Credix: bridge 12–36 měsíců na rychlý nákup, činžovní dům → prohlášení vlastníka → rozprodej nebo refinancování, provozní úvěr se zástavou nemovitosti (slide 12b)
   - Home Credit: bridge, refinancování + hotovost navíc, refinancování s rekonstrukcí i při dočasném výpadku nájmu, development bez předprodejů (slide 12a)
   - Řádek: Strategie: bridge → oprava bonity nebo projektu → refinancování do banky.
-- **Lektor říká:** HC úvěr 10 mil. Kč orientačně = poplatky cca 116 400 Kč (zpracování 80 000 Kč + supervize Air Bank 15 000 Kč + katastr 1 600 Kč + notářský zápis cca 19 800 Kč); vše schvaluje mateřská Air Bank. Nákup pod cenou HC zohlední jen částečně – min. 20 % vlastních zdrojů. Credix LTV mimo Prahu a Brno 65–75 %, komerce −10 p. b.
+- **Lektor říká:** HC úvěr 10 mil. Kč orientačně = poplatky cca 116 400 Kč (zpracování 80 000 Kč + supervize Air Bank 15 000 Kč + katastr 1 600 Kč + notářský zápis cca 19 800 Kč); vše schvaluje mateřská Air Bank. Nákup pod cenou HC zohlední jen částečně – min. 20 % vlastních zdrojů. Credix: sazba 9–10 % podle hovoru 24. 9. (prezentace uvádí od 8,9 %), krajská města nad 70 % LTV nejdou (Plzeň centrum, špatný stav, refi + rekonstrukce: 65–70 %).
 
 ### Slide 12a – Home Credit: investiční a developerský úvěr (BLOK 4)
 
@@ -302,6 +315,31 @@ Při skluzu zkrátit slidy 10 a 17, ne blok 5 (strategie je vyvrcholení).
   - Smlouva na 20 let, reálně ~2 roky; prodej jednotky koncovému klientovi lze splatit i do 1 roku bez sankce · hypotéky pro kupce přes Air Bank
 - **Obsah slidu – pruh Pravidla splácení:** vždy měsíčně anuitně (jistina + úrok), žádné balony · mimořádná splátka do 12 měsíců 3 %, pak zdarma · mimořádnou splátku předem nahlásit a v daném měsíci zaplatit i řádnou splátku
 - **Lektor říká:** developer bez předprodejů zahájí prodej až na hrubé stavbě – kupci vidí dispozice a prodává se za plnou cenu, ne pod tlakem podmínky banky. Proto se vyšší sazba často vyplatí. Balonové úvěry jsou riziko: při neschopnosti splatit se prodlužují za další poplatek z jistiny.
+
+### Slide 12b – Credix: bridge financování (BLOK 4)
+
+- **Účel:** kdy dává Credix smysl – rychlý nákup, činžovní dům k rozdělení, cesta do Monety (zdroj: hovor s Credixem 24. 9. 2026).
+- **Rozvržení:** vlevo karta „Bridge 12–36 měsíců“ s velkým číslem sazby a tokem ve 3 krocích, vpravo tabulka LTV podle typu a lokality; dole pruh „Zástava a vlastní zdroje“.
+- **Obsah slidu – Bridge:**
+  - **9–10 %** · **12–36 měsíců** · schválení i čerpání **~10 pracovních dnů**
+  - Tok: 1 Credix zafinancuje nákup → 2 klient nastaví nájemní smlouvy, nájmy chodí 6–12 měsíců (podle požadavku banky) → 3 refinancování do banky o ~3 p. b. levněji, nejčastěji Moneta (Živnohypotéka až 30 let)
+  - Moneta bere Credix jako banku – refinancuje ho napřímo; sama u něj parkuje klienty, kteří potřebují koupit rychle
+  - Splácení: z nájmů měsíčně úrok, jistina ve splatnosti z refinancování; nebo balon s kapitalizací úroků
+  - Poplatky: zpracování do 2 % z rámce · exit fee do 1 roku 2–3 %, pak 0 % (lze 0 % už po 6 měsících za vyšší sazbu)
+- **Obsah slidu – tabulka LTV:**
+
+| Typ nemovitosti | LTV |
+| --- | --- |
+| Byty a rodinné domy | 65–80 % |
+| Bytové domy | typicky 70–75 %, Praha a Brno výš |
+| Krajská města (Plzeň, refi + rekonstrukce) | max. 70 % |
+| Pozemek se stavebním povolením | 65–70 % |
+| Pozemek jen podle územního plánu | 50–55 % (spekulace) |
+| Rizikové lokality: Karlovy Vary, Ostrava, Ústecký kraj | individuálně, nižší |
+
+  - Řádek pod tabulkou: Preferované lokality: Praha, Brno, střední Čechy, pak krajská města. Limit 80 mil. Kč; činžovní domy v Praze a Brně až 100 mil. Kč na výjimku Banky CREDITAS.
+- **Obsah slidu – pruh Zástava a vlastní zdroje:** min. **20 % vlastních zdrojů** (nákup v rámci skupiny i 100 % kupní ceny) · 100 % projektových nákladů, pokud je zajištěno jinou nemovitostí PO, PO ze skupiny nebo FO společníka · **zástava třetí osoby ne** (ani rodina) – reputační riziko a bez protiplnění ji insolvenční správce může zpochybnit · činžovní dům bez prohlášení vlastníka se ocení jako celek, po prohlášení po jednotkách → vyšší zástavní hodnota → Credix může proplatit část vlastních zdrojů
+- **Lektor říká:** pro indikaci stačí kupní cena (≈ ocenění), doba, zda měsíční úroky nebo kapitalizace, lokalita a typ – bez přesného LV, i slepá poptávka. Odhad od odhadců Banky CREDITAS; nad 25 mil. Kč jde na supervizi do banky, lze použít i vlastního bankovního znalce. Zástava od společnosti ze skupiny potřebuje smlouvu o protiplnění. Exit z bridge: Moneta, případně UniCredit.
 
 ### Slide 13 – Bonita právnické osoby (BLOK 5 · STRATEGIE)
 
@@ -379,9 +417,9 @@ Při skluzu zkrátit slidy 10 a 17, ne blok 5 (strategie je vyvrcholení).
 - **Účel:** praktické hranice – vyvazování, odhady, časy.
 - **Rozvržení:** tři sloupce karet.
 - **Obsah slidu:**
-  - Zástava: kolečko = vědomá práce se zástavou třetí osoby · podmínky vyvázání vyjednat předem do smlouvy · 1 nemovitost = 1 úvěr, kde to jde · HC: vyvázání jednotky při prodeji – 80 % ceny bez DPH na splátku
-  - Odhad: výnosová metoda nebo cena budoucí = alfa a omega · Credix jen odhadci Banky CREDITAS · HC odhad max. 6 měsíců starý · nájem musí být potvrzen v odhadu
-  - Proces a čas: RB hypotéka do 3 pracovních dnů · Home Credit ~1 měsíc, zápis zástavy na KN min. 20 dní · Fio ~3 měsíce – začít s předstihem · Credix rychlý prescoring
+  - Zástava: kolečko = vědomá práce se zástavou třetí osoby · podmínky vyvázání vyjednat předem do smlouvy · 1 nemovitost = 1 úvěr, kde to jde · HC: vyvázání jednotky při prodeji – 80 % ceny bez DPH na splátku · Credix: zástava třetí osoby ne – bez protiplnění ji může insolvenční správce zpochybnit
+  - Odhad: výnosová metoda nebo cena budoucí = alfa a omega · Credix: odhadci Banky CREDITAS, nad 25 mil. Kč supervize v bance (lze i vlastní bankovní znalec) · HC odhad max. 6 měsíců starý · nájem musí být potvrzen v odhadu
+  - Proces a čas: RB hypotéka do 3 pracovních dnů · Home Credit ~1 měsíc, zápis zástavy na KN min. 20 dní · Fio ~3 měsíce – začít s předstihem · Credix schválení i čerpání ~10 pracovních dnů
 - **Lektor říká:** u kolečka prodej nemovitosti FO zablokuje banka firmy, pokud vyvázání není ve smlouvě.
 
 ### Slide 18 – Shrnutí, diskuze a kontakty (BLOK 6)
@@ -389,13 +427,41 @@ Při skluzu zkrátit slidy 10 a 17, ne blok 5 (strategie je vyvrcholení).
 - **Rozvržení:** vlevo šest číslovaných karet, vpravo karta Q&A s kontakty, dole disclaimer.
 - **Obsah slidu:**
   - 01 Navázání – bonita FO končí na DTI 7× a LTV 70 %; zbývá volná zástava a bonita firmy.
-  - 02 Posloupnost – (ČS) → RB → Moneta → Credix / Home Credit / Fio.
+  - 02 Posloupnost – (ČS) → RB → Moneta → Credix / Home Credit / Fio; bridge Credix → refinancování do Monety.
   - 03 Moneta – Mini 7,2 %, Plus a Pro 6,8 %; 1 DP + 12 měsíců = až 3 mil. Kč; zástava třetí osoby.
   - 04 Startup – ČS 1,2 mil. Kč / 9,9 % / 84 měsíců, i pro nové SPV, zajištění Evropskou investiční bankou.
   - 05 Kolečko FO ↔ PO – bonitu nese firma, nemovitosti drží FO; zápůjčka vždy za tržní úrok.
   - 06 Úskalí – pohledávka za společníky v rozvaze a obrat SPV od třetích osob.
   - Karta Q&A: Diskuze a vaše dotazy · propočet kolečka na vaší rozvaze v 1:1 konzultaci · Adam Pospíšil · egfin.cz · adamovyfinance.cz
   - Disclaimer: Prezentace je informační. Podmínky bank se mění – vždy je ověřte u svého poradce nebo přímo v bance. Sazby orientační k 24. 9. 2026.
+
+## 3b. Review decku Workshop_pokročilí – EGFIN (PDF 24 stran, 24. 9. 2026)
+
+### Chyby k opravě
+
+| # | Slide | Problém | Návrh |
+| --- | --- | --- | --- |
+| 1 | 1, 18, 23 | znak „↔“ se nevykresluje („Kolečko FO   PO“) | nahradit „FO a PO“ |
+| 2 | 5, 7, 11, 12, 23 | sazby Monety nesedí: slide 11 uvádí Mini 7 %, Plus a Pro 6,5 %; slide 5 „6,8–7,2 %“, slide 7 „6,5–7,2 %“, slide 12 splátka počítaná ze 7,2 %, shrnutí „Mini 7,2 %, Plus a Pro 6,8 %“ | sjednotit podle slidu 11; při 7 % je splátka 3 mil. Kč / 30 let 19 959 Kč |
+| 3 | 7 | řádek Bonita má rozhozené sloupce; písmo pod 12 pt; rychlost RB „~1 měsíc“ vs. slide 9 „do 3 pracovních dnů“ | zjednodušit tabulku (viz níže), sjednotit RB |
+| 4 | 15 | hlavička tabulky koliduje s titulkem; blok „Kdy použít“ překrývá logo v patičce | posunout tabulku pod titulek, zmenšit blok |
+| 5 | 5 | „omezeně (čsobs ok)“ | „omezeně (ČSOBS ano)“ |
+| 6 | 4 | „(Modrá pyramida)“ a „(Partners banka)“ v závorkách bez vysvětlení; dolní třetina slidu prázdná | závorky odstranit nebo vysvětlit; kartu výsledku zvětšit |
+| 7 | 9 | titulek „PROFIT rezidenční / komerční“ je název produktu, ne téma; pravý dolní roh prázdný | „Raiffeisenbank: hypotéka na pronájem a DSCR“ |
+| 8 | 22 | Credix „rychlý prescoring“ – zastaralé | „schválení i čerpání ~10 pracovních dnů“ |
+| 9 | 20 | karta „Proč SPV“ se dotýká pásu kroků; text uzlů malý | viz zjednodušení |
+
+### Zjednodušení a zpřehlednění
+
+1. **Matice bank (slide 7):** 11 řádků × 6 sloupců při ~10 pt je z projektoru nečitelné. Nechat 6 klíčových řádků (Dlužník, Sazba, Max. LTV, Výše, Splatnost, Zástava 3. osoby); Poplatky, Předčasné splacení, Rychlost a Bonita přesunout do speaker notes – u projektových poskytovatelů jsou stejně na slidu 15. Písmo min. 12 pt.
+2. **Projektové financování (slide 15):** po přidání řádku Zástava má tabulka 11 řádků. Nechat 8 (Dlužník, Sazba, LTV, Výše, Splatnost, Splácení, Předčasné splacení, Zástava), Poplatky a Rychlost přesunout na slidy 12a/12b a do notes. Blok „Kdy použít“ zkrátit na jednu větu na poskytovatele.
+3. **RB podnikatelské úvěry (slide 10):** pro investory jsou podstatné Investiční úvěr, Americká hypotéka a Offset. Neúčelový a kontokorentní úvěr zkrátit na jeden řádek „ostatní“ nebo do notes; sloupec Poznámka zkrátit na max. 2 položky.
+4. **Úskalí kolečka a SPV (slide 20):** rozdělit na dva slidy: 20a diagram + legenda + karta „Proč SPV“ (větší uzly, písmo 14 pt), 20b osm kroků jako 4 × 2 karty s jednou větou navíc u kroku 6 (obrat od třetí osoby) a 7 (nájem vs. úrok). Časově to nic nestojí, kroky se stejně odvyprávějí.
+5. **Bonita v praxi (slide 3):** je to rekapitulace z workshopu pro začátečníky; když bude skluz, první kandidát na vypuštění. Alternativa: ponechat jen dvě velká čísla (6,83–13,22 mil. Kč a rozdíl 6,4 mil. Kč) bez tabulky.
+6. **Bonita PO (slide 17):** čtyři karty jsou z poloviny prázdné. Přidat do karty Rozvaha řádek „pohledávky za společníky → varianta SPV“ jako zlatý odkaz a snížit výšku karet, nebo doplnit pátou kartu „Co doložit“ (výkazy 2 roky, nájemní smlouvy, ARES, bezdlužnost).
+7. **Posloupnost bank (slide 6):** ČS je na schodech dvakrát (0 a 3). Sloučit do jednoho stupně „ČS: projektové financování (volitelně před RB) · Startup úvěr (výjimka, až za Monetou)“, ať schody mají 4 stupně a stejnou výšku.
+8. **Patička:** logo je na všech slidech, text patičky jen na některých. Sjednotit: „egfin.cz · Workshop pro pokročilé investory · 24. 9. 2026“ na všech obsahových slidech.
+9. **Startup ČS vs. posloupnost:** slide 6 říká „čerpat až za Monetou“, slide 14 „vhodný pro rozjezd nového SPV“. Do notes slidu 14 doplnit, kdy který případ: nové SPV bez Monety → startup první; existující firma před Monetou → startup až po Monetě, aby nezatížil bonitu.
 
 ## 4. Otevřené body k ověření před finalizací
 
@@ -407,7 +473,7 @@ Potvrzeno lektorem 24. 9.: posloupnost bank, parametry startup úvěru ČS podle
 
 ## 5. Zdroje
 
-- Pocket, 24. 9. 2026: „Podnikatelské úvěry Home Credit“ (13:29), „Příprava obsahu workshopu pro pokročilé“ (10:34), „Pokročilá strategie financování“ (11:15), „Pokročilé strategie financování 2 a SPV“ (11:50)
+- Pocket, 24. 9. 2026: „Podmínky bridge financování v Credixu“ (15:33), „Podnikatelské úvěry Home Credit“ (13:29), „Příprava obsahu workshopu pro pokročilé“ (10:34), „Pokročilá strategie financování“ (11:15), „Pokročilé strategie financování 2 a SPV“ (11:50)
 - Zadání workshopu pro začátečníky 23. 9. 2026 (roadmapa, SBL Mini/Plus/Pro, vizuální styl)
 - Workshop_Pokrocili_v3.pptx (struktura, RB DSCR, Fio, křížová zástava)
 - CREDIX – Firemní úvěry, základní parametry (2026); Home Credit – Zajištěný úvěr pro podnikatele 2026; Česká spořitelna – Firemní úvěry, SB Praha 01/2026
