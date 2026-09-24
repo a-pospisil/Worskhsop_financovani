@@ -1,7 +1,7 @@
 # Zadání prezentace – Workshop financování pro pokročilé investory
 
-**Termín:** 24. 9. 2026 · **Místo a čas:** [doplnit] · **Lektor:** Adam Pospíšil, Evergreen Finance (egfin.cz), adamovyfinance.cz
-**Rozsah:** 18 slidů, 16:9, česky · **Verze zadání:** 24. 9. 2026, v1 · **Navazuje na:** `../workshop-zacatecnici/zadani-prezentace-2026-09-23.md` (stejný vizuální systém)
+**Termín:** 24. 9. 2026, 18:00–20:30 · **Místo:** Baťův palác, Václavské náměstí 774/6, Praha 1 · **Lektor:** Adam Pospíšil, Evergreen Finance (egfin.cz), adamovyfinance.cz
+**Rozsah:** 18 slidů, 16:9, česky · **Verze zadání:** 24. 9. 2026, v2 (místo a čas, startup ČS podle nahrávky, potvrzená posloupnost bank) · **Navazuje na:** `../workshop-zacatecnici/zadani-prezentace-2026-09-23.md` (stejný vizuální systém)
 
 ## Jak se zadáním pracovat
 
@@ -23,31 +23,32 @@
 | Cílová skupina | investoři s 1+ nemovitostí, OSVČ a majitelé s.r.o., absolventi workshopu pro začátečníky (23. 9. 2026) |
 | Předpokládané znalosti | LTV, DSTI, DTI, bonita, účel, zástava, roadmapa ČSOB/stavební spořitelny |
 | Co si účastník odnese | posloupnost bank · srovnání parametrů napříč bankami · Moneta jako most k firemnímu financování · startup úvěry pro SPV · strategii kolečka FO ↔ PO a její úskalí |
+| Zdroj programu | egfin.cz/workshopy – workshop pro pokročilé |
 | Tón | profesionální, čísla a srovnání, žádný marketing produktů |
 
-## 2. Struktura a časování (orientačně, 150 min vč. přestávky)
+## 2. Struktura a časování (18:00–20:30)
 
-| # | Slide | Blok | Minuty |
-| --- | --- | --- | --- |
-| 1 | Titulní | – | 2 |
-| 2 | Program večera | – | 3 |
-| 3 | Rekapitulace: roadmapa k 30 mil. Kč | 1 · NAVÁZÁNÍ | 5 |
-| 4 | Kde končí bonita FO | 1 | 8 |
-| 5 | Posloupnost bank | 2 · POSLOUPNOST BANK | 7 |
-| 6 | Matice bank: co je kde možné | 2 | 10 |
-| 7 | Moneta SBL: Mini, Plus, Pro | 3 · MONETA | 8 |
-| 8 | Moneta: co je nového a kde je hranice | 3 | 7 |
-| 9 | Raiffeisenbank: hypotéka na pronájem a DSCR | 4 · BANKY | 8 |
-| 10 | Česká spořitelna: firemní úvěry | 4 | 8 |
-| – | Přestávka | – | 15 |
-| 11 | Startup úvěry: ČS vs. ČSOB | 4 | 5 |
-| 12 | Projektové financování: Fio, Credix, Home Credit | 4 | 10 |
-| 13 | Bonita právnické osoby | 5 · STRATEGIE | 7 |
-| 14 | Kolečko FO ↔ PO | 5 | 8 |
-| 15 | Kolečko v číslech | 5 | 5 |
-| 16 | Úskalí kolečka a varianta SPV | 5 | 8 |
-| 17 | Zástava, odhad a proces | 6 · PRAXE | 6 |
-| 18 | Shrnutí, diskuze a kontakty | 6 | 20+ |
+| # | Slide | Blok | Čas | Minuty |
+| --- | --- | --- | --- | --- |
+| 1 | Titulní | – | 18:00 | 2 |
+| 2 | Program večera | – | 18:02 | 3 |
+| 3 | Rekapitulace: roadmapa k 30 mil. Kč | 1 · NAVÁZÁNÍ | 18:05 | 5 |
+| 4 | Kde končí bonita FO | 1 | 18:10 | 8 |
+| 5 | Posloupnost bank | 2 · POSLOUPNOST BANK | 18:18 | 7 |
+| 6 | Matice bank: co je kde možné | 2 | 18:25 | 10 |
+| 7 | Moneta SBL: Mini, Plus, Pro | 3 · MONETA | 18:35 | 8 |
+| 8 | Moneta: co je nového a kde je hranice | 3 | 18:43 | 7 |
+| 9 | Raiffeisenbank: hypotéka na pronájem a DSCR | 4 · BANKY | 18:50 | 8 |
+| 10 | Česká spořitelna: firemní úvěry | 4 | 18:58 | 7 |
+| – | Přestávka | – | 19:05–19:20 | 15 |
+| 11 | Startup úvěry: ČS vs. ČSOB | 4 | 19:20 | 5 |
+| 12 | Projektové financování: Fio, Credix, Home Credit | 4 | 19:25 | 10 |
+| 13 | Bonita právnické osoby | 5 · STRATEGIE | 19:35 | 7 |
+| 14 | Kolečko FO ↔ PO | 5 | 19:42 | 8 |
+| 15 | Kolečko v číslech | 5 | 19:50 | 5 |
+| 16 | Úskalí kolečka a varianta SPV | 5 | 19:55 | 8 |
+| 17 | Zástava, odhad a proces | 6 · PRAXE | 20:03 | 6 |
+| 18 | Shrnutí, diskuze a kontakty | 6 | 20:09–20:30 | 21 |
 
 Při skluzu zkrátit slidy 10 a 17, ne blok 5 (strategie je vyvrcholení).
 
@@ -61,7 +62,7 @@ Při skluzu zkrátit slidy 10 a 17, ne blok 5 (strategie je vyvrcholení).
   - Titulek: Financování investičních nemovitostí
   - Podtitul: Když bonita fyzické osoby nestačí: firma, posloupnost bank a kolečko FO ↔ PO
   - Řádek témat: Posloupnost bank · Moneta · Startup úvěry · Projektové financování · Kolečko FO ↔ PO
-  - Patička: 24. 9. 2026 · [místo] · Adam Pospíšil · egfin.cz
+  - Patička: 24. 9. 2026 · Baťův palác, Praha 1 · Adam Pospíšil · egfin.cz
 - **Lektor říká:** rychlá otázka do sálu – kdo má s.r.o. se ziskem, kdo má nemovitost bez zástavy? Tyto dvě věci jsou palivo pro dnešní strategii.
 
 ### Slide 2 – Program večera
@@ -233,18 +234,18 @@ Při skluzu zkrátit slidy 10 a 17, ne blok 5 (strategie je vyvrcholení).
 | | Česká spořitelna – Firemní úvěr Start Up | ČSOB – Úvěr pro začínající podnikatele |
 | --- | --- | --- |
 | Výše | 50 000 – 1 200 000 Kč | 200 000 – 1 000 000 Kč |
-| Sazba | 9,9 % p. a. | individuálně |
-| Splatnost | až 84 měsíců | individuálně |
-| Splátka při max. výši | 19 859 Kč | – |
+| Sazba | 9,9 % p. a., fixace 10 let | individuálně |
+| Splatnost | 10 let | individuálně |
+| Splátka při max. výši | zhruba 20 400 Kč | – |
 | Odklad splátek | první splátka až o 5 měsíců | – |
 | Pro koho | FOP i PO do 3 let od založení – i nové SPV | nově vzniklé firmy a podnikatelé |
 | Doklady | bez daňového přiznání, bez prokazování účelu | dle bankéře |
-| Zajištění | blankosměnka s avalem, zástava účtu, záruka EIF | podpora EU přes EIF |
+| Zajištění | záruka Evropské investiční banky (EIF), blankosměnka s avalem, zástava účtu | podpora EU přes EIF |
 | Poplatky | zřízení i vedení 0 Kč | běžný účet zdarma |
 
-  - Řádek: Riziko nese Evropský investiční fond (skupina EIB) → úvěr je snadno dosažitelný a vhodný na rozjezd podnikání i SPV.
+  - Řádek: Úvěr je zajištěný Evropskou investiční bankou → lehce dosažitelný, vhodný pro rozjezd podnikání i nového SPV.
 - **Lektor říká:** startup úvěr = vlastní zdroje do SPV, první obraty a historie pro Monetu.
-- **Ověřit před finalizací:** v přípravě zazněla splatnost/fixace 10 let a splátka cca 20 400 Kč; web ČS uvádí splatnost až 84 měsíců (splátka 19 859 Kč). Sazbu ČSOB doplnit od bankéře.
+- **Ověřit před finalizací:** sazbu a splatnost ČSOB doplnit od bankéře.
 
 ### Slide 12 – Projektové financování: Fio, Credix, Home Credit (BLOK 4)
 
@@ -322,7 +323,7 @@ Při skluzu zkrátit slidy 10 a 17, ne blok 5 (strategie je vyvrcholení).
   - Schéma „Varianta Moneta: SPV“: Původní s.r.o. (má bonitu) —ručení→ SPV s.r.o. (dlužník, eviduje úvěr i zápůjčku) ←úvěr— Moneta (SBL, zástava nemovitosti FO) · SPV —zápůjčka za tržní úrok→ FO (investor) · FO —nájem→ SPV · SPV —podnájem→ Koncový nájemník (třetí osoba, ne ESSO) · nájemník → nájemné = obrat SPV od třetí osoby
   - Karty: **Obrat** ≥ 2× měsíční splátka na BÚ SPV, jen od třetích osob · **Výhled** depozitní účet 3–6 splátek → pak stačí obrat 1× splátka · **Bonus** podnájem má nižší ochranu nájemníka než přímý nájem
   - Patička slidu: Ilustrativní schéma, konkrétní strukturu ověřit s bankou a daňovým poradcem.
-- **Lektor říká:** start SPV lze podpořit startup úvěrem ČS (1,2 mil. Kč, lze i na nové SPV) – vlastní zdroje, první obraty a historie.
+- **Lektor říká:** start SPV lze podpořit startup úvěrem ČS (1,2 mil. Kč, 10 let, lze i na nové SPV) – vlastní zdroje, první obraty a historie.
 
 ### Slide 17 – Zástava, odhad a proces (BLOK 6 · PRAXE)
 
@@ -341,7 +342,7 @@ Při skluzu zkrátit slidy 10 a 17, ne blok 5 (strategie je vyvrcholení).
   - 01 Navázání – bonita FO končí na DTI 7× a LTV 70 %; zbývá volná zástava a bonita firmy.
   - 02 Posloupnost – (ČS) → RB → Moneta → Credix / Home Credit / Fio.
   - 03 Moneta – Mini 7,2 %, Plus a Pro 6,8 %; 1 DP + 12 měsíců = až 3 mil. Kč; zástava třetí osoby.
-  - 04 Startup – ČS 1,2 mil. Kč / 9,9 %, i pro nové SPV, záruka EIF.
+  - 04 Startup – ČS 1,2 mil. Kč / 9,9 % / 10 let, i pro nové SPV, zajištění Evropskou investiční bankou.
   - 05 Kolečko FO ↔ PO – bonitu nese firma, nemovitosti drží FO; zápůjčka vždy za tržní úrok.
   - 06 Úskalí – pohledávka za společníky v rozvaze a obrat SPV od třetích osob.
   - Karta Q&A: Diskuze a vaše dotazy · propočet kolečka na vaší rozvaze v 1:1 konzultaci · Adam Pospíšil · egfin.cz · adamovyfinance.cz
@@ -349,12 +350,11 @@ Při skluzu zkrátit slidy 10 a 17, ne blok 5 (strategie je vyvrcholení).
 
 ## 4. Otevřené body k ověření před finalizací
 
-1. ČS Start Up: splatnost 84 měsíců (web) vs. 10 let a splátka ~20 400 Kč (příprava). 20 364 Kč odpovídá Monetě 3 mil. Kč / 7,2 % / 30 let.
-2. ČSOB startup: sazba a splatnost na webu neuvedeny – doplnit od bankéře.
-3. ČS projektové financování na pronájem: LTV 70/80 % výnosové hodnoty (poznámky ČS) vs. 65 % ve starém decku.
-4. Posloupnost bank a její zdůvodnění (od nejlevnější a nejpřísnější) – potvrdit.
-5. Příklad kolečka (slide 15) je ilustrativní: DSCR 1,25 a tržní úrok 7 % jsou předpoklady.
-6. Místo a čas workshopu doplnit do slidu 1.
+1. ČSOB startup: sazba a splatnost na webu neuvedeny – doplnit od bankéře.
+2. ČS projektové financování na pronájem: LTV 70/80 % výnosové hodnoty (poznámky ČS) vs. 65 % ve starém decku.
+3. Příklad kolečka (slide 15) je ilustrativní: DSCR 1,25 a tržní úrok 7 % jsou předpoklady.
+
+Potvrzeno lektorem 24. 9.: posloupnost bank, parametry startup úvěru ČS podle nahrávky, místo a čas.
 
 ## 5. Zdroje
 
