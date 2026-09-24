@@ -36,7 +36,9 @@ def svg(body):
             '<marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" '
             f'orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="{GOLD}"/></marker>'
             '<marker id="ahc" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" '
-            f'orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="{CYAN}"/></marker></defs>'
+            f'orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="{CYAN}"/></marker>'
+            '<marker id="ahg" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="28" markerHeight="28" markerUnits="userSpaceOnUse" '
+            f'orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="{GREEN}"/></marker></defs>'
             f'{body}</svg>')
 
 
@@ -193,7 +195,75 @@ def spv():
     return svg("".join(b))
 
 
+def bridge():
+    b = [header("PROJEKTOVÉ FINANCOVÁNÍ · NEBANKOVKY", "Bridge úvěr: koupit rychle, refinancovat levně")]
+    # časová osa
+    y_ax = 262
+    b.append(f'<line x1="90" y1="{y_ax}" x2="1830" y2="{y_ax}" stroke="{CARD2}" stroke-width="8" stroke-linecap="round"/>')
+    b.append(f'<line x1="90" y1="{y_ax}" x2="680" y2="{y_ax}" stroke="{GOLD}" stroke-width="8" stroke-linecap="round"/>')
+    b.append(f'<line x1="680" y1="{y_ax}" x2="1270" y2="{y_ax}" stroke="{GOLD}" stroke-width="8" stroke-dasharray="22,14"/>')
+    b.append(f'<line x1="1270" y1="{y_ax}" x2="1790" y2="{y_ax}" stroke="{GREEN}" stroke-width="8" stroke-linecap="round" marker-end="url(#ahg)"/>')
+    for x, n, col, lab in ((90, "1", GOLD, "DEN 0 · ~10 PRACOVNÍCH DNŮ"), (680, "2", GOLD, "MĚSÍC 1–12 (MAX. 36)"), (1270, "3", GREEN, "EXIT · 6–12 MĚSÍCŮ PO NÁKUPU")):
+        b.append(f'<circle cx="{x}" cy="{y_ax}" r="26" fill="{col}" stroke="{BG}" stroke-width="5"/>')
+        b.append(text(x, y_ax + 10, n, 26, BG, "bold", "middle"))
+        b.append(text(x + 40, y_ax - 26, lab, 19, col, "bold", spacing=2))
+    # tři karty
+    cards = [
+        ("NÁKUP PŘES NEBANKOVKU", GOLD, [
+            ("Rychlost", ["schválení i čerpání", "~10 pracovních dnů"]),
+            ("LTV", ["65–80 % podle typu", "a lokality"]),
+            ("Vlastní zdroje", ["min. 20 %", "(v rámci skupiny i 0 %)"]),
+            ("Poplatek", ["do 2 % z úvěrového", "rámce"]),
+            ("Zástava", ["kupovaná nemovitost,", "případně vlastní / skupina"]),
+        ]),
+        ("BRIDGE: DRŽÍM A CHYSTÁM BANKU", GOLD, [
+            ("Sazba", ["9–10 % Credix,", "8,5–10,5 % Home Credit"]),
+            ("Splácím", ["jen měsíční úrok z nájmů,", "jistina až na konci"]),
+            ("Nájmy", ["nastavím smlouvy, 6–12 měs.", "chodí na účet nebo do DP"]),
+            ("Hodnota", ["rekonstrukce / prohlášení", "vlastníka → vyšší ocenění"]),
+            ("Alternativa", ["balon: kapitalizace", "úroků do jistiny"]),
+        ]),
+        ("EXIT: REFINANCOVÁNÍ DO BANKY", GREEN, [
+            ("Kam", ["nejčastěji Moneta,", "Živnohypotéka až 30 let"]),
+            ("Sazba", ["o ~3 p. b. níž", "než nebankovka"]),
+            ("Jistina", ["splatí ji banka,", "nebankovka odchází"]),
+            ("Exit fee", ["do 1 roku 2–3 %, pak 0 %", "(lze 0 % po 6 měsících)"]),
+            ("Alternativa", ["prodej po rozdělení", "na jednotky"]),
+        ]),
+    ]
+    cw, ch, y0 = 560, 480, 316
+    for i, (title, col, rows) in enumerate(cards):
+        x = 90 + i * (cw + 30)
+        b.append(f'<rect x="{x}" y="{y0}" width="{cw}" height="{ch}" rx="16" fill="{CARD}" stroke="{col}" stroke-width="3"/>')
+        b.append(text(x + 28, y0 + 48, title, 21, col, "bold", spacing=2))
+        y = y0 + 104
+        for k, v in rows:
+            b.append(text(x + 28, y, k, 20, MUTED))
+            b.append(lines(x + 170, y, v, 21, "#FFFFFF", lh=1.25))
+            b.append(f'<line x1="{x + 28}" y1="{y + 44}" x2="{x + cw - 28}" y2="{y + 44}" stroke="{CARD2}" stroke-width="1.5"/>')
+            y += 72
+        if i < 2:
+            ax = x + cw + 2
+            b.append(f'<path d="M{ax},{y0 + ch / 2 - 14} L{ax + 26},{y0 + ch / 2} L{ax},{y0 + ch / 2 + 14} z" fill="{GOLD}"/>')
+    # spodní pás: cena rychlosti
+    y1 = 830
+    b.append(f'<rect x="90" y="{y1}" width="1150" height="170" rx="16" fill="{CARD2}"/>')
+    b.append(text(118, y1 + 46, "CENA RYCHLOSTI · PŘÍKLAD 10 MIL. KČ NA 12 MĚSÍCŮ", 20, GOLD, "bold", spacing=2))
+    b.append(text(118, y1 + 100, "950 000 Kč", 40, "#FFFFFF", "bold"))
+    b.append(text(118, y1 + 136, "úrok 9,5 % u nebankovky", 19, MUTED))
+    b.append(text(450, y1 + 100, "+ 200 000 Kč", 40, "#FFFFFF", "bold"))
+    b.append(text(450, y1 + 136, "poplatek 2 %", 19, MUTED))
+    b.append(text(800, y1 + 100, "+ 0–300 000 Kč", 40, "#FFFFFF", "bold"))
+    b.append(text(800, y1 + 136, "exit fee 0–3 %", 19, MUTED))
+    b.append(f'<rect x="1270" y="{y1}" width="560" height="170" rx="16" fill="{CARD}" stroke="{GREEN}" stroke-width="3"/>')
+    b.append(text(1298, y1 + 46, "VS. BANKA 6,5 %: 650 000 KČ", 20, GREEN, "bold", spacing=2))
+    b.append(lines(1298, y1 + 92, ["Rok u nebankovky stojí o 0,5–0,8 mil. Kč víc.", "Vyplatí se, když rychlost rozhodne o koupi", "nebo když banka zatím nájmy neuzná."], 21, "#FFFFFF"))
+    b.append(text(90, 1050, "Princip platí pro Credix, Fio i Home Credit – liší se sazby, LTV a poplatky (Home Credit splácí anuitně, balon nedělá). Ilustrativní čísla k 24. 9. 2026.", 18, MUTED))
+    return svg("".join(b))
+
+
 if __name__ == "__main__":
     out = Path(__file__).parent
     (out / "kolecko-strategie.svg").write_text(kolecko(), encoding="utf-8")
     (out / "kolecko-spv.svg").write_text(spv(), encoding="utf-8")
+    (out / "bridge-uver.svg").write_text(bridge(), encoding="utf-8")
