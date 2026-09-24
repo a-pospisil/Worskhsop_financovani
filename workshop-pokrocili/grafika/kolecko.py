@@ -112,54 +112,84 @@ def arrow(x1, y1, x2, y2, label="", col=GOLD, lx=None, ly=None, anchor="middle")
     return out
 
 
+def numbered_arrow(x1, y1, x2, y2, n, col=GOLD, t=0.5, dashed=False):
+    """Šipka s číslem kroku v kroužku (t = poloha kroužku na šipce 0–1)."""
+    m = "ahc" if col == CYAN else "ah"
+    dash = ' stroke-dasharray="12,10"' if dashed else ""
+    out = (f'<line x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}" stroke="{col}" stroke-width="5"{dash} '
+           f'marker-end="url(#{m})"/>')
+    cx, cy = x1 + (x2 - x1) * t, y1 + (y2 - y1) * t
+    out += f'<circle cx="{cx:.1f}" cy="{cy:.1f}" r="22" fill="{col}" stroke="{BG}" stroke-width="4"/>'
+    out += text(cx, cy + 9, str(n), 24, BG, "bold", "middle")
+    return out
+
+
 def spv():
     b = [header("POKROČILÁ STRATEGIE FINANCOVÁNÍ · 2", "Úskalí kolečka a varianta SPV")]
-    # levý sloupec – problém
-    lx, ly, lw = 90, 230, 520
-    b.append(f'<rect x="{lx}" y="{ly}" width="{lw}" height="560" rx="16" fill="{CARD}" stroke="{RED}" stroke-width="3"/>')
-    b.append(text(lx + 32, ly + 56, "PROBLÉM V ROZVAZE", 22, RED, "bold", spacing=3))
-    b.append(lines(lx + 32, ly + 110, ["Zápůjčka FO je ve výkazech", "firmy jako pohledávka", "za společníky."], 27, "#FFFFFF", "bold"))
-    b.append(lines(lx + 32, ly + 240, ["ČSOB i další banky tento", "závazek FO přičtou", "do splátek → horší DSTI/DTI."], 24, TXT))
-    b.append(lines(lx + 32, ly + 380, ["Přeúčtovat na „jiné pohledávky“", "lze, ale banky řádek čím dál", "častěji rozklíčují."], 24, MUTED))
-    b.append(text(lx + 32, ly + 520, "→ řešení: úvěr a zápůjčka v SPV", 24, GOLD, "bold"))
-    # pravá část – schéma
-    X0 = 660
-    b.append(text(X0, 260, "VARIANTA MONETA: SPV", 22, GOLD, "bold", spacing=3))
-    bw, bh = 330, 130
-    mat = (X0, 300)
-    spvb = (X0 + 430, 300)
-    bank = (X0 + 860, 300)
-    fo = (X0 + 430, 560)
-    ten = (X0 + 860, 560)
-    b.append(box(*mat, bw, bh, "Původní s.r.o.", ["má bonitu", "→ ručí za úvěr SPV"], CYAN))
-    b.append(box(*spvb, bw, bh, "SPV s.r.o.", ["dlužník, eviduje úvěr", "i zápůjčku"], GOLD, CARD2))
-    b.append(box(*bank, 300, bh, "Moneta", ["SBL · zástava", "nemovitosti FO"], CYAN))
-    b.append(box(fo[0], fo[1], bw, bh, "FO (investor)", ["vlastní nemovitosti,", "dává zástavu"], GREEN))
-    b.append(box(ten[0], ten[1], 300, bh, "Koncový nájemník", ["třetí osoba", "(ne ESSO)"], CYAN))
-    # šipky
-    b.append(arrow(mat[0] + bw, 365, spvb[0] - 6, 365, "ručení", CYAN, (mat[0] + bw + spvb[0]) / 2, 338))
-    b.append(arrow(bank[0], 365, spvb[0] + bw + 6, 365, "úvěr", CYAN, (bank[0] + spvb[0] + bw) / 2, 338))
-    b.append(arrow(spvb[0] + 110, 430, fo[0] + 110, 554, "zápůjčka za tržní úrok", GOLD, spvb[0] + 96, 500, "end"))
-    b.append(arrow(fo[0] + 220, 554, spvb[0] + 220, 436, "nájem", GOLD, spvb[0] + 236, 500, "start"))
-    b.append(arrow(spvb[0] + bw, 420, ten[0] + 10, 556, "podnájem", GOLD, spvb[0] + bw + 90, 470, "start"))
-    b.append(arrow(ten[0] + 150, 554, bank[0] + 150, 436, "", CYAN))
-    b.append(text(ten[0] + 166, 500, "nájemné = obrat", 21, CYAN, "bold"))
-    b.append(text(ten[0] + 166, 526, "SPV od 3. osoby", 21, CYAN, "bold"))
-    # spodní pás podmínek
-    y0 = 740
-    cards = [
-        ("OBRAT", ["≥ 2× měsíční splátka na BÚ SPV,", "jen od třetích osob, ne od ESSO"], GOLD),
-        ("VÝHLED", ["depozitní účet 3–6 splátek", "→ pak stačí obrat 1× splátka"], CYAN),
-        ("BONUS", ["podnájem má nižší ochranu", "nájemníka než přímý nájem"], GREEN),
+    # ---- schéma vlevo (x 90–1270) ----
+    W_, H_ = 280, 120
+    A = (90, 250)      # původní s.r.o.
+    B = (520, 250)     # SPV (šířka 320)
+    C = (990, 250)     # Moneta
+    E = (90, 600)      # nemovitost
+    D = (520, 600)     # FO (šířka 320)
+    F = (990, 600)     # nájemník
+    b.append(box(*A, W_, H_, "Původní s.r.o.", ["má bonitu a historii", "RUČITEL / PŘISTUPITEL"], CYAN))
+    b.append(box(*B, 320, H_, "SPV s.r.o.", ["nová firma · DLUŽNÍK", "eviduje úvěr i zápůjčku"], GOLD, CARD2))
+    b.append(box(*C, W_, H_, "Moneta", ["SBL · zástava =", "nemovitost FO"], CYAN))
+    b.append(box(*E, W_, H_, "Nemovitost", ["koupená na FO", "= nová volná zástava"], GREEN))
+    b.append(box(D[0], D[1], 320, H_, "FO (investor)", ["vlastník nemovitostí,", "dává zástavu"], GREEN))
+    b.append(box(*F, W_, H_, "Koncový nájemník", ["třetí osoba", "(ne ESSO)"], CYAN))
+    # peníze = zlatá, smluvní vztah / nemovitost = mátová
+    b.append(numbered_arrow(C[0], 292, B[0] + 320 + 6, 292, 1, GOLD, 0.5))                 # Moneta → SPV úvěr
+    b.append(numbered_arrow(B[0] + 320, 330, C[0] - 6, 330, 8, GOLD, 0.5))                 # SPV → Moneta splátka
+    b.append(numbered_arrow(A[0] + W_, 310, B[0] - 6, 310, "R", CYAN, 0.5))               # ručení
+    b.append(numbered_arrow(B[0] + 60, B[1] + H_, D[0] + 60, D[1] - 6, 2, GOLD, 0.5))     # SPV → FO zápůjčka
+    b.append(numbered_arrow(B[0] + 160, B[1] + H_, D[0] + 160, D[1] - 6, 7, GOLD, 0.5))   # SPV → FO nájem
+    b.append(numbered_arrow(D[0] + 260, D[1], B[0] + 260, B[1] + H_ + 6, "7", GOLD, 0.5)) # FO → SPV úrok
+    b.append(numbered_arrow(D[0], 660, E[0] + W_ + 6, 660, 3, GREEN, 0.5))               # FO → nemovitost koupě
+    b.append(numbered_arrow(E[0] + W_ - 40, E[1], B[0] + 20, B[1] + H_ + 6, 4, CYAN, 0.55)) # nemovitost → SPV nájem FO→SPV
+    b.append(numbered_arrow(B[0] + 300, B[1] + H_, F[0] + 20, F[1] - 6, 5, CYAN, 0.3))  # SPV → nájemník podnájem
+    b.append(numbered_arrow(F[0] + 130, F[1], B[0] + 320 + 6, B[1] + H_ - 20, 6, GOLD, 0.7)) # nájemník → SPV nájemné
+    # legenda
+    b.append(f'<line x1="90" y1="770" x2="150" y2="770" stroke="{GOLD}" stroke-width="5"/>')
+    b.append(text(162, 777, "peníze", 20, TXT))
+    b.append(f'<line x1="260" y1="770" x2="320" y2="770" stroke="{CYAN}" stroke-width="5"/>')
+    b.append(text(332, 777, "smluvní vztah (ručení, nájem, podnájem)", 20, TXT))
+    b.append(f'<line x1="760" y1="770" x2="820" y2="770" stroke="{GREEN}" stroke-width="5"/>')
+    b.append(text(832, 777, "nemovitost", 20, TXT))
+    # ---- pravý panel: proč SPV ----
+    px, py, pw, ph = 1330, 240, 500, 550
+    b.append(f'<rect x="{px}" y="{py}" width="{pw}" height="{ph}" rx="16" fill="{CARD}" stroke="{RED}" stroke-width="3"/>')
+    b.append(text(px + 32, py + 52, "PROČ SPV, A NE PŮVODNÍ S.R.O.", 21, RED, "bold", spacing=2))
+    b.append(lines(px + 32, py + 100, ["Zápůjčka FO je v rozvaze firmy", "pohledávka za společníky."], 25, "#FFFFFF", "bold"))
+    b.append(lines(px + 32, py + 176, ["ČSOB i další banky ji FO přičtou", "do splátek → horší DSTI a DTI", "u hypoték na FO."], 22, TXT))
+    b.append(lines(px + 32, py + 276, ["„Jiné pohledávky“ banky čím dál", "častěji rozklíčují."], 22, MUTED))
+    b.append(f'<line x1="{px + 32}" y1="{py + 330}" x2="{px + pw - 32}" y2="{py + 330}" stroke="{CARD2}" stroke-width="2"/>')
+    b.append(text(px + 32, py + 372, "V SPV zůstává úvěr i zápůjčka.", 24, GOLD, "bold"))
+    b.append(lines(px + 32, py + 410, ["Původní s.r.o. jen ručí / přistupuje", "k závazku – její výkazy nenesou", "zápůjčku společníkovi."], 22, TXT))
+    b.append(lines(px + 32, py + 500, ["Podmínka Monety: obrat SPV ≥ 2× splátka", "od třetích osob → řeší krok 6."], 22, CYAN))
+    # ---- spodní pás: kroky ----
+    steps = [
+        ("1", "Moneta půjčí SPV", "zástava = nemovitost FO · R = ručení s.r.o."),
+        ("2", "SPV půjčí FO", "zápůjčka vždy za tržní úrok"),
+        ("3", "FO koupí nemovitost", "na sebe → nová volná zástava"),
+        ("4", "FO ji pronajme SPV", "nájemní smlouva FO → SPV"),
+        ("5", "SPV ji podnajme", "koncovému nájemníkovi (nižší ochrana)"),
+        ("6", "Nájemník platí SPV", "nájemné = obrat od třetí osoby"),
+        ("7", "SPV platí FO nájem", "FO platí SPV úrok ze zápůjčky"),
+        ("8", "SPV splácí Monetě", "z nájemného; výhled: depozit 3–6 splátek"),
     ]
-    cw = 380
-    for i, (h, s, col) in enumerate(cards):
-        x = X0 + i * (cw + 20)
-        b.append(f'<rect x="{x}" y="{y0}" width="{cw}" height="160" rx="14" fill="{CARD}" stroke="{col}" stroke-width="2"/>')
-        b.append(text(x + 26, y0 + 46, h, 22, col, "bold", spacing=3))
-        b.append(lines(x + 26, y0 + 90, s, 22, TXT))
-    b.append(text(90, 1010, "Moneta: zástava může být nemovitost třetí osoby · zápůjčka PO → FO vždy za tržní úrok · "
-                  "ilustrativní schéma, konkrétní strukturu ověřit s bankou a daňovým poradcem", 20, MUTED))
+    x0, y0, cw, ch = 90, 810, 425, 96
+    for i, (n, h, sub) in enumerate(steps):
+        x = x0 + (i % 4) * (cw + 13)
+        y = y0 + (i // 4) * (ch + 12)
+        b.append(f'<rect x="{x}" y="{y}" width="{cw}" height="{ch}" rx="12" fill="{CARD}" stroke="{CARD2}" stroke-width="2"/>')
+        b.append(f'<circle cx="{x + 34}" cy="{y + 36}" r="20" fill="{GOLD}"/>')
+        b.append(text(x + 34, y + 44, n, 22, BG, "bold", "middle"))
+        b.append(text(x + 66, y + 42, h, 22, "#FFFFFF", "bold"))
+        b.append(text(x + 66, y + 74, sub, 18, MUTED))
+    b.append(text(90, 1050, "Ilustrativní schéma – konkrétní strukturu ověřit s bankou a daňovým poradcem (převodní ceny, tržní úrok zápůjčky).", 18, MUTED))
     return svg("".join(b))
 
 

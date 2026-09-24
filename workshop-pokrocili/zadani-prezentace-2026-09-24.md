@@ -1,7 +1,7 @@
 # Zadání prezentace – Workshop financování pro pokročilé investory
 
 **Termín:** 24. 9. 2026, 18:00–20:30 · **Místo:** Baťův palác, Václavské náměstí 774/6, Praha 1 · **Lektor:** Adam Pospíšil, Evergreen Finance (egfin.cz), adamovyfinance.cz
-**Rozsah:** 19 slidů (vč. 12a), 16:9, česky · **Verze zadání:** 24. 9. 2026, v3 (Home Credit podle hovoru 24. 9.: slidy 6, 12, nový slide 12a; v2: místo a čas, startup ČS, posloupnost bank) · **Navazuje na:** `../workshop-zacatecnici/zadani-prezentace-2026-09-23.md` (stejný vizuální systém)
+**Rozsah:** 19 slidů (vč. 12a), 16:9, česky · **Verze zadání:** 24. 9. 2026, v4 (slide 16 přepracován: SPV dlužník, původní s.r.o. ručitel, tok nájem FO → SPV → podnájem; v3: Home Credit, slide 12a; v2: místo a čas, startup ČS) · **Navazuje na:** `../workshop-zacatecnici/zadani-prezentace-2026-09-23.md` (stejný vizuální systém)
 
 ## Jak se zadáním pracovat
 
@@ -19,6 +19,10 @@
 ### Doplňující prompt pro Claude Design – Home Credit (v3, zkopírovat do rozpracované prezentace)
 
 > Aktualizuj prezentaci podle nové verze zadání (v3, přikládám zadani-prezentace-2026-09-24.md). Měň jen Home Credit, ostatní slidy nech beze změny. 1) Slide 6 (matice bank), sloupec Home Credit: sazba 8,5–10,5 %; max. LTV Praha a Brno 70–75 %, krajská města 65–70 %, komerce 60 %; výše 5–150 mil. Kč na projekt, 200 mil. Kč na skupinu; splatnost max. 20 let, anuitně; bonita 90 % čistého nájmu (bez služeb a fondu oprav), příjmy ESSO přes ručitelskou společnost; poplatky 2 %, max. 80 000 Kč + supervize 15 000 Kč. 2) Slide 12 (Fio, Credix, Home Credit): přepiš sloupec Home Credit a přidej řádek „Bonita“ přesně podle tabulky v zadání; kartu Home Credit změň na „bridge, refinancování + hotovost navíc, refinancování s rekonstrukcí i při dočasném výpadku nájmu, development bez předprodejů (slide 12a)“; speaker notes podle „Lektor říká“. 3) Vlož nový slide 12a „Home Credit: investiční a developerský úvěr“ mezi slide 12 a 13, štítek „BLOK 4 · BANKY“, světlé pozadí: vlevo karta „Investiční úvěr“, vpravo karta „Development“ s procesem čerpání jako 4 číslované kroky se zlatými čísly (fotky a videa stavby → supervize prostavěnosti Air Bank → čerpání druhý den → opakovat do konce stavby), velká čísla 8,5–10,5 % a 8,5–9,5 % v JetBrains Mono, dole pruh „Pravidla splácení“ se zvýrazněním „žádné balony“ zelenou #238A6C. Texty a čísla převezmi doslova ze sekce „Slide 12a“, poznámky pro lektora jen do speaker notes. 4) Slide 17: v kartě Zástava nahraď text o Home Creditu textem „HC: vyvázání jednotky při prodeji – 80 % ceny bez DPH na splátku“. Styl, písma a barvy zachovej stejné jako na ostatních slidech. Ukaž mi nejdřív slide 12a.
+
+### Doplňující prompt pro Claude Design – slide 16 (v4, zkopírovat do rozpracované prezentace)
+
+> Přepracuj slide 16 „Úskalí kolečka a varianta SPV“ podle nové verze zadání (v4, přikládám zadani-prezentace-2026-09-24.md) a podle přiloženého obrázku kolecko-spv.png. Ostatní slidy nech beze změny. Slide je tmavě zelený (#06231C). Vlevo na 2/3 šířky překresli nativně schéma šesti uzlů ve dvou řadách: nahoře Původní s.r.o. (RUČITEL / PŘISTUPITEL), SPV s.r.o. (DLUŽNÍK, zvýrazněný zlatým rámečkem) a Moneta; dole Nemovitost, FO (investor) a Koncový nájemník – texty uzlů převezmi doslova ze zadání. Šipky mezi uzly mají číslo kroku v kroužku a tři barvy: zlatá #D9BE7F = peníze, světlá mátová #B6DCCB = smluvní vztah (ručení, nájem, podnájem), zelená #238A6C = nemovitost; směr a číslování šipek přesně podle seznamu „šipky“ v zadání (R, 1–8), pod schématem legenda barev. Vpravo na 1/3 šířky karta „PROČ SPV, A NE PŮVODNÍ S.R.O.“ s varovným rámečkem #E0951A a textem ze zadání, tučně „V SPV zůstává úvěr i zápůjčka.“. Dole pás osmi kroků ve dvou řadách po čtyřech, každý se zlatým číslem, tučným názvem a jednořádkovým popisem podle tabulky kroků v zadání. Patička slidu podle zadání, poznámky pro lektora jen do speaker notes. Písma, štítek bloku a logo v patičce stejné jako na ostatních slidech. Ukaž mi výsledek.
 
 ## 1. Parametry akce a publikum
 
@@ -343,14 +347,32 @@ Při skluzu zkrátit slidy 10 a 17, ne blok 5 (strategie je vyvrcholení).
 
 ### Slide 16 – Úskalí kolečka a varianta SPV (BLOK 5)
 
-- **Účel:** kde kolečko narazí a jak to řeší varianta s SPV.
-- **Rozvržení:** vlevo varovná karta „Problém v rozvaze“, vpravo schéma pěti uzlů se šipkami, dole tři karty podmínek. Předloha: `grafika/kolecko-spv.png`.
-- **Obsah slidu:**
-  - Problém v rozvaze: Zápůjčka FO je ve výkazech firmy jako pohledávka za společníky. · ČSOB i další banky tento závazek FO přičtou do splátek → horší DSTI/DTI. · Přeúčtovat na „jiné pohledávky“ lze, ale banky řádek čím dál častěji rozklíčují. · → řešení: úvěr a zápůjčka v SPV
-  - Schéma „Varianta Moneta: SPV“: Původní s.r.o. (má bonitu) —ručení→ SPV s.r.o. (dlužník, eviduje úvěr i zápůjčku) ←úvěr— Moneta (SBL, zástava nemovitosti FO) · SPV —zápůjčka za tržní úrok→ FO (investor) · FO —nájem→ SPV · SPV —podnájem→ Koncový nájemník (třetí osoba, ne ESSO) · nájemník → nájemné = obrat SPV od třetí osoby
-  - Karty: **Obrat** ≥ 2× měsíční splátka na BÚ SPV, jen od třetích osob · **Výhled** depozitní účet 3–6 splátek → pak stačí obrat 1× splátka · **Bonus** podnájem má nižší ochranu nájemníka než přímý nájem
-  - Patička slidu: Ilustrativní schéma, konkrétní strukturu ověřit s bankou a daňovým poradcem.
-- **Lektor říká:** start SPV lze podpořit startup úvěrem ČS (1,2 mil. Kč, 84 měsíců, lze i na nové SPV) – vlastní zdroje, první obraty a historie.
+- **Účel:** kde kolečko narazí (pohledávka za společníky v rozvaze) a jak to řeší varianta s SPV – kdo je dlužník, kdo ručí a jak tečou peníze.
+- **Rozvržení:** tmavě zelený slide. Vlevo (2/3 šířky) schéma šesti uzlů ve dvou řadách: nahoře Původní s.r.o. · SPV s.r.o. · Moneta, dole Nemovitost · FO (investor) · Koncový nájemník. Šipky s číslem kroku v kroužku; barvy šipek: zlatá = peníze, světlá mátová = smluvní vztah (ručení, nájem, podnájem), zelená = nemovitost; pod schématem legenda. Vpravo (1/3) varovná karta „Proč SPV, a ne původní s.r.o.“. Dole pás osmi číslovaných kroků (4 × 2). Předloha: `grafika/kolecko-spv.png`.
+- **Obsah slidu – uzly:**
+  - Původní s.r.o. – má bonitu a historii · RUČITEL / PŘISTUPITEL
+  - SPV s.r.o. – nová firma · DLUŽNÍK · eviduje úvěr i zápůjčku (zvýrazněný uzel, zlatý rámeček)
+  - Moneta – SBL · zástava = nemovitost FO
+  - Nemovitost – koupená na FO = nová volná zástava
+  - FO (investor) – vlastník nemovitostí, dává zástavu
+  - Koncový nájemník – třetí osoba (ne ESSO)
+- **Obsah slidu – šipky (číslo = krok):** R Původní s.r.o. → SPV (ručení, mátová) · 1 Moneta → SPV (zlatá) · 8 SPV → Moneta (zlatá) · 2 SPV → FO (zlatá) · 7 SPV → FO (zlatá) a 7 FO → SPV (zlatá) · 3 FO → Nemovitost (zelená) · 4 Nemovitost → SPV (mátová) · 5 SPV → Koncový nájemník (mátová) · 6 Koncový nájemník → SPV (zlatá)
+- **Obsah slidu – kroky (pás dole):**
+
+| # | Krok | Popis |
+| --- | --- | --- |
+| 1 | Moneta půjčí SPV | zástava = nemovitost FO · R = ručení s.r.o. |
+| 2 | SPV půjčí FO | zápůjčka vždy za tržní úrok |
+| 3 | FO koupí nemovitost | na sebe → nová volná zástava |
+| 4 | FO ji pronajme SPV | nájemní smlouva FO → SPV |
+| 5 | SPV ji podnajme | koncovému nájemníkovi (nižší ochrana) |
+| 6 | Nájemník platí SPV | nájemné = obrat od třetí osoby |
+| 7 | SPV platí FO nájem | FO platí SPV úrok ze zápůjčky |
+| 8 | SPV splácí Monetě | z nájemného; výhled: depozit 3–6 splátek |
+
+- **Obsah slidu – karta „Proč SPV, a ne původní s.r.o.“:** Zápůjčka FO je v rozvaze firmy pohledávka za společníky. · ČSOB i další banky ji FO přičtou do splátek → horší DSTI a DTI u hypoték na FO. · „Jiné pohledávky“ banky čím dál častěji rozklíčují. · **V SPV zůstává úvěr i zápůjčka.** Původní s.r.o. jen ručí / přistupuje k závazku – její výkazy nenesou zápůjčku společníkovi. · Podmínka Monety: obrat SPV ≥ 2× splátka od třetích osob → řeší krok 6.
+  - Patička slidu: Ilustrativní schéma – konkrétní strukturu ověřit s bankou a daňovým poradcem (převodní ceny, tržní úrok zápůjčky).
+- **Lektor říká:** SPV je dlužník, původní s.r.o. ručitel nebo přistupitel k závazku. SPV půjčí FO, FO koupí nemovitost, tu pronajme SPV a SPV ji podnajme koncovému nájemníkovi. Nájemné tak platí koncový nájemník do SPV – to je obrat od třetí osoby, který Moneta vyžaduje – a z SPV jdou peníze FO formou nájmu. Bonus: podnájem má nižší ochranu nájemníka než přímý nájem. Start SPV lze podpořit startup úvěrem ČS (1,2 mil. Kč, 84 měsíců, lze i na nové SPV) – vlastní zdroje, první obraty a historie.
 
 ### Slide 17 – Zástava, odhad a proces (BLOK 6 · PRAXE)
 
