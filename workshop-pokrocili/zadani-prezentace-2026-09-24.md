@@ -1,7 +1,7 @@
 # Zadání prezentace – Workshop financování pro pokročilé investory
 
 **Termín:** 24. 9. 2026, 18:00–20:30 · **Místo:** Baťův palác, Václavské náměstí 774/6, Praha 1 · **Lektor:** Adam Pospíšil, Evergreen Finance (egfin.cz), adamovyfinance.cz
-**Rozsah:** 18 slidů, 16:9, česky · **Verze zadání:** 24. 9. 2026, v2 (místo a čas, startup ČS podle nahrávky, potvrzená posloupnost bank) · **Navazuje na:** `../workshop-zacatecnici/zadani-prezentace-2026-09-23.md` (stejný vizuální systém)
+**Rozsah:** 19 slidů (vč. 12a), 16:9, česky · **Verze zadání:** 24. 9. 2026, v3 (Home Credit podle hovoru 24. 9.: slidy 6, 12, nový slide 12a; v2: místo a čas, startup ČS, posloupnost bank) · **Navazuje na:** `../workshop-zacatecnici/zadani-prezentace-2026-09-23.md` (stejný vizuální systém)
 
 ## Jak se zadáním pracovat
 
@@ -14,7 +14,11 @@
 
 ### Prompt pro Claude Design (zkopírovat)
 
-> Vytvoř prezentaci pro živý workshop pro pokročilé investory: 18 slidů, 16:9, česky, přesně podle přiloženého souboru zadani-prezentace-2026-09-24.md. Sekce „3. Slidy“ definuje každý slide: titulek, rozvržení, přesný obsah a poznámky pro lektora. Texty a čísla přebírej doslova, nic nepřidávej, nevymýšlej a nezaokrouhluj. Poznámky pro lektora patří jen do speaker notes. Vizuální styl stejný jako u workshopu pro začátečníky podle webu egfin.cz: tmavě zelené titulní, předělové a závěrečné slidy (#06231C, bílý text, akcent světlá zlatá #D9BE7F), světlé obsahové slidy (#FAFAF7 střídavě #F0F2ED) s bílými kartami (ohraničení #E3E7E0, zaoblení 8–12 px, jemný stín), nadpisy #06231C, tlumený text #68746F, zlatá #C9A962 na štítky bloků a čísla kroků, zelená #238A6C jen jako sekundární zvýraznění. Písma: Playfair Display Bold na titulky, Poppins na text, JetBrains Mono na čísla a tabulky. Tabulky srovnání bank jsou hlavní obsah – řádky parametrů, sloupce banky, nejlepší hodnota v řádku zvýrazněná zelenou #238A6C, hranice/omezení varovnou #E0951A. Slidy 14 a 16 jsou diagramy: překresli je nativně podle přiložených obrázků kolecko-strategie.png a kolecko-spv.png (tmavě zelené pozadí, zlaté šipky), texty z nich převezmi doslova. Jeden zlatý akcentní slide (slide 15, kolečko v číslech). Každý slide má vlevo nahoře malý štítek bloku (např. „BLOK 2 · POSLOUPNOST BANK“), titulek 36–40 pt, obsah v kartách, tabulkách nebo velkých číslech; minimální velikost textu 12 pt. Žádné ozdobné pruhy, emoji ani přechody mimo fotku na titulním slidu. Logo mark egfin-icon.svg do patičky každého slidu. Nejdřív mi ukaž slide 6 (matice bank) a slide 14 (kolečko). Po odsouhlasení vygeneruj zbývající slidy ve stejném systému.
+> Vytvoř prezentaci pro živý workshop pro pokročilé investory: 19 slidů (1–12, 12a, 13–18), 16:9, česky, přesně podle přiloženého souboru zadani-prezentace-2026-09-24.md. Sekce „3. Slidy“ definuje každý slide: titulek, rozvržení, přesný obsah a poznámky pro lektora. Texty a čísla přebírej doslova, nic nepřidávej, nevymýšlej a nezaokrouhluj. Poznámky pro lektora patří jen do speaker notes. Vizuální styl stejný jako u workshopu pro začátečníky podle webu egfin.cz: tmavě zelené titulní, předělové a závěrečné slidy (#06231C, bílý text, akcent světlá zlatá #D9BE7F), světlé obsahové slidy (#FAFAF7 střídavě #F0F2ED) s bílými kartami (ohraničení #E3E7E0, zaoblení 8–12 px, jemný stín), nadpisy #06231C, tlumený text #68746F, zlatá #C9A962 na štítky bloků a čísla kroků, zelená #238A6C jen jako sekundární zvýraznění. Písma: Playfair Display Bold na titulky, Poppins na text, JetBrains Mono na čísla a tabulky. Tabulky srovnání bank jsou hlavní obsah – řádky parametrů, sloupce banky, nejlepší hodnota v řádku zvýrazněná zelenou #238A6C, hranice/omezení varovnou #E0951A. Slidy 14 a 16 jsou diagramy: překresli je nativně podle přiložených obrázků kolecko-strategie.png a kolecko-spv.png (tmavě zelené pozadí, zlaté šipky), texty z nich převezmi doslova. Jeden zlatý akcentní slide (slide 15, kolečko v číslech). Každý slide má vlevo nahoře malý štítek bloku (např. „BLOK 2 · POSLOUPNOST BANK“), titulek 36–40 pt, obsah v kartách, tabulkách nebo velkých číslech; minimální velikost textu 12 pt. Žádné ozdobné pruhy, emoji ani přechody mimo fotku na titulním slidu. Logo mark egfin-icon.svg do patičky každého slidu. Nejdřív mi ukaž slide 6 (matice bank) a slide 14 (kolečko). Po odsouhlasení vygeneruj zbývající slidy ve stejném systému.
+
+### Doplňující prompt pro Claude Design – Home Credit (v3, zkopírovat do rozpracované prezentace)
+
+> Aktualizuj prezentaci podle nové verze zadání (v3, přikládám zadani-prezentace-2026-09-24.md). Měň jen Home Credit, ostatní slidy nech beze změny. 1) Slide 6 (matice bank), sloupec Home Credit: sazba 8,5–10,5 %; max. LTV Praha a Brno 70–75 %, krajská města 65–70 %, komerce 60 %; výše 5–150 mil. Kč na projekt, 200 mil. Kč na skupinu; splatnost max. 20 let, anuitně; bonita 90 % čistého nájmu (bez služeb a fondu oprav), příjmy ESSO přes ručitelskou společnost; poplatky 2 %, max. 80 000 Kč + supervize 15 000 Kč. 2) Slide 12 (Fio, Credix, Home Credit): přepiš sloupec Home Credit a přidej řádek „Bonita“ přesně podle tabulky v zadání; kartu Home Credit změň na „bridge, refinancování + hotovost navíc, refinancování s rekonstrukcí i při dočasném výpadku nájmu, development bez předprodejů (slide 12a)“; speaker notes podle „Lektor říká“. 3) Vlož nový slide 12a „Home Credit: investiční a developerský úvěr“ mezi slide 12 a 13, štítek „BLOK 4 · BANKY“, světlé pozadí: vlevo karta „Investiční úvěr“, vpravo karta „Development“ s procesem čerpání jako 4 číslované kroky se zlatými čísly (fotky a videa stavby → supervize prostavěnosti Air Bank → čerpání druhý den → opakovat do konce stavby), velká čísla 8,5–10,5 % a 8,5–9,5 % v JetBrains Mono, dole pruh „Pravidla splácení“ se zvýrazněním „žádné balony“ zelenou #238A6C. Texty a čísla převezmi doslova ze sekce „Slide 12a“, poznámky pro lektora jen do speaker notes. 4) Slide 17: v kartě Zástava nahraď text o Home Creditu textem „HC: vyvázání jednotky při prodeji – 80 % ceny bez DPH na splátku“. Styl, písma a barvy zachovej stejné jako na ostatních slidech. Ukaž mi nejdřív slide 12a.
 
 ## 1. Parametry akce a publikum
 
@@ -42,7 +46,8 @@
 | 10 | Česká spořitelna: firemní úvěry | 4 | 18:58 | 7 |
 | – | Přestávka | – | 19:05–19:20 | 15 |
 | 11 | Startup úvěry: ČS vs. ČSOB | 4 | 19:20 | 5 |
-| 12 | Projektové financování: Fio, Credix, Home Credit | 4 | 19:25 | 10 |
+| 12 | Projektové financování: Fio, Credix, Home Credit | 4 | 19:25 | 6 |
+| 12a | Home Credit: investiční a developerský úvěr | 4 | 19:31 | 4 |
 | 13 | Bonita právnické osoby | 5 · STRATEGIE | 19:35 | 7 |
 | 14 | Kolečko FO ↔ PO | 5 | 19:42 | 8 |
 | 15 | Kolečko v číslech | 5 | 19:50 | 5 |
@@ -113,7 +118,7 @@ Při skluzu zkrátit slidy 10 a 17, ne blok 5 (strategie je vyvrcholení).
 | --- | --- | --- |
 | Limit bonity | DTI 7× a LTV 70 % od 3. nemovitosti | žádné DTI – hospodářský výsledek, EBITDA, DSCR |
 | Sazba (orient.) | od 5,29 % (RB hypotéka na pronájem) | 6,8–7,2 % Moneta SBL, projektové 8,5–10,5 % |
-| Nájem do bonity | 70 % (HC až 90 %; RB i budoucí nájmy) | nájemní smlouvy, výnosová metoda, DSCR |
+| Nájem do bonity | 70 % (HC 90 % čistého nájmu; RB i budoucí nájmy) | nájemní smlouvy, výnosová metoda, DSCR |
 | Zisk z s.r.o. u FO | ř. 53 VZZ × 0,85 ÷ 12 (rozdíl > 20 % → průměr 2 let) | – |
 | Prodej nemovitosti | osvobozen po 10 letech (pořízené od 2021) | daň z příjmů PO + zdanění výplaty |
 | Zástava třetí osoby | – | Moneta SBL, Živnohypotéka, HC (jednatel, SJM) |
@@ -142,13 +147,13 @@ Při skluzu zkrátit slidy 10 a 17, ne blok 5 (strategie je vyvrcholení).
 | Parametr | ČS | RB | Moneta SBL | Fio | Credix | Home Credit |
 | --- | --- | --- | --- | --- | --- | --- |
 | Dlužník | FOP, PO, SPV | FO, s.r.o. | OSVČ, s.r.o. | PO | jen PO | FOP, PO |
-| Sazba orient. | 9,9 % startup | od 5,29 % | 6,8–7,2 % | PRIBOR + 2,2 % | od 8,9 % | max. 8,5–10,5 % |
-| Max. LTV | 70/80 % výnos. hodnoty | 70 % (RE 65 %) | 65–80 % | 60–70 % | až 80 % | 70 % (Praha, Brno 75 %) |
-| Výše úvěru | do 30 mil. Kč | 20 mil. rezid. / 12 mil. komerce | 1–80 mil. Kč | individuálně | 5–80 mil. Kč | 5–150 mil. Kč |
-| Splatnost | 15–30 let dle typu | 30 let rezid. / 20 let komerce | 30 let (komerce 20) | ~25 let | 12–36 měsíců | 1–20 let |
-| Bonita | EBITDA, 2 DP | budoucí nájmy, zisk s.r.o., DSCR | výkazy, DSCR | výkazy, záměr | záměr + exit | příjem z podnikání, nájem do 90 % |
+| Sazba orient. | 9,9 % startup | od 5,29 % | 6,8–7,2 % | PRIBOR + 2,2 % | od 8,9 % | 8,5–10,5 % |
+| Max. LTV | 70/80 % výnos. hodnoty | 70 % (RE 65 %) | 65–80 % | 60–70 % | až 80 % | Praha, Brno 70–75 %, krajská města 65–70 %, komerce 60 % |
+| Výše úvěru | do 30 mil. Kč | 20 mil. rezid. / 12 mil. komerce | 1–80 mil. Kč | individuálně | 5–80 mil. Kč | 5–150 mil. Kč na projekt, 200 mil. Kč na skupinu |
+| Splatnost | 15–30 let dle typu | 30 let rezid. / 20 let komerce | 30 let (komerce 20) | ~25 let | 12–36 měsíců | max. 20 let, anuitně |
+| Bonita | EBITDA, 2 DP | budoucí nájmy, zisk s.r.o., DSCR | výkazy, DSCR | výkazy, záměr | záměr + exit | 90 % čistého nájmu (bez služeb a FO), ESSO přes ručitelskou společnost |
 | Zástava 3. osoby | individuálně | – | ano | + podíly, pohledávky | + směnka, NZ | ano (jednatel, SJM) |
-| Poplatky | 0 Kč startup | – | – | 0,5 % + 0,3 % ročně | 2 % | 2 %, max. 80 000 Kč |
+| Poplatky | 0 Kč startup | – | – | 0,5 % + 0,3 % ročně | 2 % | 2 %, max. 80 000 Kč + supervize 15 000 Kč |
 | Předčasné splacení | – | – | – | zdarma | zdarma | po 12 měs. zdarma (dřív 3 %) |
 | Rychlost | – | do 3 prac. dnů | – | ~3 měsíce | rychlý prescoring | ~1 měsíc |
 
@@ -255,22 +260,44 @@ Při skluzu zkrátit slidy 10 a 17, ne blok 5 (strategie je vyvrcholení).
 
 | Parametr | Fio | Credix | Home Credit |
 | --- | --- | --- | --- |
-| Dlužník | PO, ručí FO | jen PO (nemovitost ve vlastnictví PO) | FOP i PO (zástava i jednatele / SJM) |
-| Sazba | PRIBOR + 2,2 % (~5,8–6,3 %) | od 8,9 % | max. 8,5–10,5 % |
-| LTV | 60–70 % | až 80 % (Praha, Brno, byty do 80 m²) | 70 %, Praha a Brno 75 %, komerce 65 % |
-| Výše | individuálně | 5–80 mil. Kč (125 mil. Kč na ESS) | 5–150 mil. Kč |
-| Splatnost | ~25 let | 12–36 měsíců | 1–20 let |
-| Splácení | anuitně | balon s kapitalizací úroků, nebo měsíčně úroky | anuitně, neměnné podmínky |
-| Poplatky | 0,5 % přistavení, 0,3 % monitoring ročně | 2 % zpracování | 2 %, max. 80 000 Kč |
+| Dlužník | PO, ručí FO | jen PO (nemovitost ve vlastnictví PO) | FOP i PO; nový projekt = SPV + vždy ručitelská společnost |
+| Sazba | PRIBOR + 2,2 % (~5,8–6,3 %) | od 8,9 % | 8,5–10,5 % (development 8,5–9,5 %) |
+| LTV | 60–70 % | až 80 % (Praha, Brno, byty do 80 m²) | Praha, Brno 70–75 % · krajská města 65–70 % · komerce 60 % · min. 20 % vlastních zdrojů |
+| Výše | individuálně | 5–80 mil. Kč (125 mil. Kč na ESS) | 5–150 mil. Kč na projekt, 200 mil. Kč na skupinu |
+| Splatnost | ~25 let | 12–36 měsíců | max. 20 let (i komerce a development) |
+| Splácení | anuitně | balon s kapitalizací úroků, nebo měsíčně úroky | vždy měsíčně anuitně, žádné balony |
+| Poplatky | 0,5 % přistavení, 0,3 % monitoring ročně | 2 % zpracování | 2 %, max. 80 000 Kč · supervize 15 000 Kč · katastr 1 600 Kč · notářský zápis |
 | Předčasné splacení | zdarma | zdarma | v prvních 12 měsících 3 %, pak zdarma |
+| Bonita | výkazy, záměr | záměr + exit strategie | celá splátka: 90 % nájmu očištěného o služby a fond oprav + příjmy ESSO přes ručitele |
 | Rychlost | ~3 měsíce | rychlý prescoring | ~1 měsíc (refi + hotovost 2–3 měsíce) |
 
 - **Obsah slidu – karty:**
   - Fio: plánovaný projekt s časovou rezervou – nejlevnější z trojice
   - Credix: development, nemovitostní rámec (revolving na postupné nákupy), exit prodejem
-  - Home Credit: bridge, refinancování + hotovost navíc, úvěr i na budoucí příjmy a byznys plán
+  - Home Credit: bridge, refinancování + hotovost navíc, refinancování s rekonstrukcí i při dočasném výpadku nájmu, development bez předprodejů (slide 12a)
   - Řádek: Strategie: bridge → oprava bonity nebo projektu → refinancování do banky.
-- **Lektor říká:** modelově u HC úvěr 10 mil. Kč = poplatky 104 811 Kč (2 % max. 80 000 Kč + notář 19 811 Kč + kontrola odhadu 3 000 Kč + katastr 2 000 Kč). Credix LTV mimo Prahu a Brno 65–75 %, komerce −10 p. b.
+- **Lektor říká:** HC úvěr 10 mil. Kč orientačně = poplatky cca 116 400 Kč (zpracování 80 000 Kč + supervize Air Bank 15 000 Kč + katastr 1 600 Kč + notářský zápis cca 19 800 Kč); vše schvaluje mateřská Air Bank. Nákup pod cenou HC zohlední jen částečně – min. 20 % vlastních zdrojů. Credix LTV mimo Prahu a Brno 65–75 %, komerce −10 p. b.
+
+### Slide 12a – Home Credit: investiční a developerský úvěr (BLOK 4)
+
+- **Účel:** co u Home Creditu jde nad rámec bank – hlavně development bez předprodejů (zdroj: hovor s Home Creditem 24. 9. 2026).
+- **Rozvržení:** vlevo karta „Investiční úvěr“, vpravo karta „Development“ s procesem čerpání ve 4 krocích; dole pruh „Pravidla splácení“.
+- **Obsah slidu – Investiční úvěr:**
+  - **8,5–10,5 %** · LTV Praha a Brno 70–75 %, krajská města 65–70 %, komerce 60 % · max. **20 let**
+  - Bonita: musí pokrýt celou splátku · **90 % nájmu** očištěného o služby a fond oprav · příjmy ekonomicky spjaté skupiny přes ručitelskou společnost
+  - Nový projekt: SPV + vždy ručitelská společnost, která projekt udrží při výpadku
+  - Umí refinancování + kompletní rekonstrukci i při dočasném výpadku nájmu
+  - Nezajištěný podnikatelský úvěr jen přes centrálu, max. 0,5 mil. Kč
+- **Obsah slidu – Development:**
+  - **8,5–9,5 %** (cca 2,5–3 p. b. nad bankou) · LTV **65–75 %** ve výstavbě · limit **150 mil. Kč** na projekt
+  - Podmínky: stavební povolení, smlouva o dílo, rozpočet, harmonogram, odhad stávající i budoucí tržní hodnoty
+  - **Bez předprodejů a bez vázaných účtů** – zálohy od kupců zůstávají developerovi
+  - Proces čerpání: 1 fotky a videa stavby → 2 supervize prostavěnosti (Air Bank) → 3 čerpání druhý den → 4 opakovat do konce stavby
+  - Umí financovat i dluhovou službu (půjčí na splátky), pokud to LTV a vlastní zdroje dovolí
+  - Vyvazování: HC určí minimální prodejní cenu, z každé jednotky jde 80 % ceny bez DPH na splátku, zbytek developerovi
+  - Smlouva na 20 let, reálně ~2 roky; prodej jednotky koncovému klientovi lze splatit i do 1 roku bez sankce · hypotéky pro kupce přes Air Bank
+- **Obsah slidu – pruh Pravidla splácení:** vždy měsíčně anuitně (jistina + úrok), žádné balony · mimořádná splátka do 12 měsíců 3 %, pak zdarma · mimořádnou splátku předem nahlásit a v daném měsíci zaplatit i řádnou splátku
+- **Lektor říká:** developer bez předprodejů zahájí prodej až na hrubé stavbě – kupci vidí dispozice a prodává se za plnou cenu, ne pod tlakem podmínky banky. Proto se vyšší sazba často vyplatí. Balonové úvěry jsou riziko: při neschopnosti splatit se prodlužují za další poplatek z jistiny.
 
 ### Slide 13 – Bonita právnické osoby (BLOK 5 · STRATEGIE)
 
@@ -330,7 +357,7 @@ Při skluzu zkrátit slidy 10 a 17, ne blok 5 (strategie je vyvrcholení).
 - **Účel:** praktické hranice – vyvazování, odhady, časy.
 - **Rozvržení:** tři sloupce karet.
 - **Obsah slidu:**
-  - Zástava: kolečko = vědomá práce se zástavou třetí osoby · podmínky vyvázání vyjednat předem do smlouvy · 1 nemovitost = 1 úvěr, kde to jde · HC: jednoduché uvolňování zástav při doplacení nebo prodeji části
+  - Zástava: kolečko = vědomá práce se zástavou třetí osoby · podmínky vyvázání vyjednat předem do smlouvy · 1 nemovitost = 1 úvěr, kde to jde · HC: vyvázání jednotky při prodeji – 80 % ceny bez DPH na splátku
   - Odhad: výnosová metoda nebo cena budoucí = alfa a omega · Credix jen odhadci Banky CREDITAS · HC odhad max. 6 měsíců starý · nájem musí být potvrzen v odhadu
   - Proces a čas: RB hypotéka do 3 pracovních dnů · Home Credit ~1 měsíc, zápis zástavy na KN min. 20 dní · Fio ~3 měsíce – začít s předstihem · Credix rychlý prescoring
 - **Lektor říká:** u kolečka prodej nemovitosti FO zablokuje banka firmy, pokud vyvázání není ve smlouvě.
@@ -358,7 +385,7 @@ Potvrzeno lektorem 24. 9.: posloupnost bank, parametry startup úvěru ČS podle
 
 ## 5. Zdroje
 
-- Pocket, 24. 9. 2026: „Příprava obsahu workshopu pro pokročilé“ (10:34), „Pokročilá strategie financování“ (11:15), „Pokročilé strategie financování 2 a SPV“ (11:50)
+- Pocket, 24. 9. 2026: „Podnikatelské úvěry Home Credit“ (13:29), „Příprava obsahu workshopu pro pokročilé“ (10:34), „Pokročilá strategie financování“ (11:15), „Pokročilé strategie financování 2 a SPV“ (11:50)
 - Zadání workshopu pro začátečníky 23. 9. 2026 (roadmapa, SBL Mini/Plus/Pro, vizuální styl)
 - Workshop_Pokrocili_v3.pptx (struktura, RB DSCR, Fio, křížová zástava)
 - CREDIX – Firemní úvěry, základní parametry (2026); Home Credit – Zajištěný úvěr pro podnikatele 2026; Česká spořitelna – Firemní úvěry, SB Praha 01/2026
