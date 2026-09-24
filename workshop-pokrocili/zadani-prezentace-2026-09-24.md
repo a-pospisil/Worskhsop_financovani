@@ -234,8 +234,8 @@ Při skluzu zkrátit slidy 10 a 17, ne blok 5 (strategie je vyvrcholení).
 | | Česká spořitelna – Firemní úvěr Start Up | ČSOB – Úvěr pro začínající podnikatele |
 | --- | --- | --- |
 | Výše | 50 000 – 1 200 000 Kč | 200 000 – 1 000 000 Kč |
-| Sazba | 9,9 % p. a., fixace 10 let | individuálně |
-| Splatnost | 10 let | individuálně |
+| Sazba | 9,9 % p. a., fixně po celou dobu | individuálně |
+| Splatnost | 84 měsíců (7 let) | individuálně |
 | Splátka při max. výši | zhruba 20 400 Kč | – |
 | Odklad splátek | první splátka až o 5 měsíců | – |
 | Pro koho | FOP i PO do 3 let od založení – i nové SPV | nově vzniklé firmy a podnikatelé |
@@ -323,7 +323,7 @@ Při skluzu zkrátit slidy 10 a 17, ne blok 5 (strategie je vyvrcholení).
   - Schéma „Varianta Moneta: SPV“: Původní s.r.o. (má bonitu) —ručení→ SPV s.r.o. (dlužník, eviduje úvěr i zápůjčku) ←úvěr— Moneta (SBL, zástava nemovitosti FO) · SPV —zápůjčka za tržní úrok→ FO (investor) · FO —nájem→ SPV · SPV —podnájem→ Koncový nájemník (třetí osoba, ne ESSO) · nájemník → nájemné = obrat SPV od třetí osoby
   - Karty: **Obrat** ≥ 2× měsíční splátka na BÚ SPV, jen od třetích osob · **Výhled** depozitní účet 3–6 splátek → pak stačí obrat 1× splátka · **Bonus** podnájem má nižší ochranu nájemníka než přímý nájem
   - Patička slidu: Ilustrativní schéma, konkrétní strukturu ověřit s bankou a daňovým poradcem.
-- **Lektor říká:** start SPV lze podpořit startup úvěrem ČS (1,2 mil. Kč, 10 let, lze i na nové SPV) – vlastní zdroje, první obraty a historie.
+- **Lektor říká:** start SPV lze podpořit startup úvěrem ČS (1,2 mil. Kč, 84 měsíců, lze i na nové SPV) – vlastní zdroje, první obraty a historie.
 
 ### Slide 17 – Zástava, odhad a proces (BLOK 6 · PRAXE)
 
@@ -342,7 +342,7 @@ Při skluzu zkrátit slidy 10 a 17, ne blok 5 (strategie je vyvrcholení).
   - 01 Navázání – bonita FO končí na DTI 7× a LTV 70 %; zbývá volná zástava a bonita firmy.
   - 02 Posloupnost – (ČS) → RB → Moneta → Credix / Home Credit / Fio.
   - 03 Moneta – Mini 7,2 %, Plus a Pro 6,8 %; 1 DP + 12 měsíců = až 3 mil. Kč; zástava třetí osoby.
-  - 04 Startup – ČS 1,2 mil. Kč / 9,9 % / 10 let, i pro nové SPV, zajištění Evropskou investiční bankou.
+  - 04 Startup – ČS 1,2 mil. Kč / 9,9 % / 84 měsíců, i pro nové SPV, zajištění Evropskou investiční bankou.
   - 05 Kolečko FO ↔ PO – bonitu nese firma, nemovitosti drží FO; zápůjčka vždy za tržní úrok.
   - 06 Úskalí – pohledávka za společníky v rozvaze a obrat SPV od třetích osob.
   - Karta Q&A: Diskuze a vaše dotazy · propočet kolečka na vaší rozvaze v 1:1 konzultaci · Adam Pospíšil · egfin.cz · adamovyfinance.cz
